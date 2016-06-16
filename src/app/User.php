@@ -23,4 +23,36 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    // User có bài viết
+    public function posts()
+    {
+        return $this->hasMany('App\Posts','author_id');
+    }
+
+    // user có comments
+    public function comments()
+    {
+        return $this->hasMany('App\Comments','from_user');
+    }
+
+    public function can_post()
+    {
+        $role = $this->role;
+        if($role == 'author' || $role == 'admin')
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public function is_admin()
+    {
+        $role = $this->role;
+        if($role == 'admin')
+        {
+            return true;
+        }
+        return false;
+    }
 }

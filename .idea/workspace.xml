@@ -1,9 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76001a5b-ca2b-4e1f-9fee-28600ccd4893" name="Default" comment="" />
+    <list default="true" id="76001a5b-ca2b-4e1f-9fee-28600ccd4893" name="Default" comment="init project">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/fonts/Amble-Regular-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/fonts/BebasNeue-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/0001-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/0001-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/0001-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/0001-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/0001-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/AjaxLoader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/arrow-next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/arrow-prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/art.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/c-arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/c1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/c2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/c3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/cart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/delivery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/det_pic.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/det_pic1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/det_pic2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/det_pic3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/down_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/gpluse.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/icon1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/icon2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/icon3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/icon4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/icon5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/icon6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/large/0001-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/large/0001-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/large/0001-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/large/0001-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/large/0001-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/large/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/nav_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/pic1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/pic2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/pic3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/pic4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/pic5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/pic6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/rss.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/sale_pic1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/sale_pic10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/sale_pic11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/sale_pic12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/sale_pic2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/sale_pic3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/sale_pic4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/sale_pic5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/sale_pic6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/sale_pic7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/sale_pic8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/sale_pic9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/search_h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/shoe_pic1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/shoe_pic2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/shoe_pic3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/shoe_pic4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/shoe_pic5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/shoe_pic6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/slider1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/slider2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/slider3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/slider4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/slider5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/slider_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/small/0001-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/small/0001-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/small/0001-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/small/0001-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/small/0001-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/small/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/top_move.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/twitter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/up_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/w_pic1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/w_pic2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/w_pic3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/w_pic4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/w_pic5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/images/w_pic6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/Comments.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/CommentController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/HomeController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/PostController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/Http/Requests/PostFormRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/Posts.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/database/migrations/2016_06_15_093140_posts.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/database/migrations/2016_06_15_093237_comments.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/css/owl.carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/css/productviewgallery.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/css/slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/cloud-zoom.1.0.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/easing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/fliplightbox.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/jquery.cslider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/jquery.easing.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/jquery.fancybox-buttons.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/jquery.fancybox-thumbs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/jquery.fancybox.pack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/jquery.mixitup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/modernizr.custom.28468.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/move-top.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/owl.carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/productviewgallery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/responsive.menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/views/about.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/views/app.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/views/home.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/views/master.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/routes.php" afterPath="$PROJECT_DIR$/src/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/User.php" afterPath="$PROJECT_DIR$/src/app/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="$PROJECT_DIR$/src/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/views/welcome.blade.php" afterPath="$PROJECT_DIR$/src/resources/views/welcome.blade.php" />
+    </list>
     <ignored path="thuc-pham-que.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,10 +150,41 @@
   <component name="FavoritesManager">
     <favorites_list name="thuc-pham-que" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/resources/views/welcome.blade.php" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -30,6 +192,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -64,6 +229,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -92,17 +258,56 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thuc-pham-que" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thuc-pham-que" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thuc-pham-que" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thuc-pham-que" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../intranet/www" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
@@ -126,6 +331,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -139,6 +350,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="76001a5b-ca2b-4e1f-9fee-28600ccd4893" name="Default" comment="" />
@@ -147,6 +361,10 @@
       <option name="presentableId" value="Default" />
       <updated>1465878055511</updated>
       <workItem from="1465878056891" duration="845000" />
+      <workItem from="1465975012801" duration="1922000" />
+      <workItem from="1466045499007" duration="2384000" />
+      <workItem from="1466060171742" duration="1244000" />
+      <workItem from="1466066082867" duration="131000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1465878269107</created>
@@ -159,7 +377,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="845000" />
+    <option name="totallyTimeSpent" value="6526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="-8" width="1936" height="1051" extended-state="0" />
@@ -167,22 +385,30 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -194,5 +420,71 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
