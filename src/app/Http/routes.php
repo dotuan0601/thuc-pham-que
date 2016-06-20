@@ -27,6 +27,11 @@ Route::get('/trangchu', 'HomeController@index');
 
 Route::get('/','PostController@index');
 Route::get('/home',['as' => 'home', 'uses' => 'PostController@index']);
+
+Route::get('/dangky', function (){
+    return view('user/dangky');
+});
+
 //authentication
 Route::controllers([
     'auth' => 'Auth\AuthController',

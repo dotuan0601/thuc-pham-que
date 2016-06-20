@@ -96,8 +96,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="h_menu">
                 <ul>
                     <li class="active"><a href="index.html">Trang chủ</a></li> |
-                    <li><a href="sale.html">Đăng ký</a></li> |
-                    <li><a href="handbags.html">Đăng nhập</a></li> |
                     <li><a href="contact.html">Liên hệ</a></li>
                 </ul>
             </div>
@@ -129,9 +127,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- start slider -->
 <div id="da-slider" class="da-slider">
     <div class="da-slide">
-        <h2>welcome to aditii</h2>
-        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
-        <a href="details.html" class="da-link">shop now</a>
+        <h2>Chào mừng bạn tới với<br/> Thực phẩm quê</h2>
+        <a href="dangky" class="da-link">Đăng ký ngay</a>
         <div class="da-img"><img src="<?php echo $assets_url;?>images/slider1.png" alt="image01" /></div>
     </div>
     <div class="da-slide">
@@ -168,7 +165,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="cau_left">
                 <h4><a href="details.html">Đại lý 1</a></h4>
-                <a href="details.html" class="btn">xem</a>
+                <a href="details.html" class="btn">Theo dõi</a>
             </div>
         </div>
         <div class="item" onclick="location.href='details.html';">
@@ -177,7 +174,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="cau_left">
                 <h4><a href="details.html">Đại lý 2</a></h4>
-                <a href="details.html" class="btn">xem</a>
+                <a href="details.html" class="btn">Theo dõi</a>
             </div>
         </div>
         <div class="item" onclick="location.href='details.html';">
@@ -186,7 +183,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="cau_left">
                 <h4><a href="details.html">Đại lý 3</a></h4>
-                <a href="details.html" class="btn">xem</a>
+                <a href="details.html" class="btn">Theo dõi</a>
             </div>
         </div>
         <div class="item" onclick="location.href='details.html';">
@@ -195,7 +192,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="cau_left">
                 <h4><a href="details.html">Đại lý 4</a></h4>
-                <a href="details.html" class="btn">xem</a>
+                <a href="details.html" class="btn">Theo dõi</a>
             </div>
         </div>
         <div class="item" onclick="location.href='details.html';">
@@ -204,7 +201,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="cau_left">
                 <h4><a href="details.html">Đại lý 5</a></h4>
-                <a href="details.html" class="btn">xem</a>
+                <a href="details.html" class="btn">Theo dõi</a>
             </div>
         </div>
         <div class="item" onclick="location.href='details.html';">
@@ -213,7 +210,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="cau_left">
                 <h4><a href="details.html">Đại lý 6</a></h4>
-                <a href="details.html" class="btn">xem</a>
+                <a href="details.html" class="btn">Theo dõi</a>
             </div>
         </div>
         <div class="item" onclick="location.href='details.html';">
@@ -222,7 +219,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="cau_left">
                 <h4><a href="details.html">Đại lý 7</a></h4>
-                <a href="details.html" class="btn">xem</a>
+                <a href="details.html" class="btn">Theo dõi</a>
             </div>
         </div>
     </div>
@@ -232,7 +229,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="main_bg1">
     <div class="wrap">
         <div class="main1">
-            <h2>featured products</h2>
+            <h2>Top sản phẩm</h2>
         </div>
     </div>
 </div>
@@ -247,7 +244,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <img src="<?php echo $assets_url;?>images/pic1.jpg" alt=""/>
                         <h3>branded shoes</h3>
                         <div class="price">
-                            <h4>$300<span>indulge</span></h4>
+                            <h4>$300<span>Xem</span></h4>
                         </div>
                         <span class="b_btm"></span>
                     </a>
@@ -257,7 +254,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <img src="<?php echo $assets_url;?>images/pic2.jpg" alt=""/>
                         <h3>branded t-shirts</h3>
                         <div class="price">
-                            <h4>$300<span>indulge</span></h4>
+                            <h4>$300<span>Xem</span></h4>
                         </div>
                         <span class="b_btm"></span>
                     </a>
@@ -267,7 +264,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <img src="<?php echo $assets_url;?>images/pic3.jpg" alt=""/>
                         <h3>branded tees</h3>
                         <div class="price">
-                            <h4>$300<span>indulge</span></h4>
+                            <h4>$300<span>Xem</span></h4>
                         </div>
                         <span class="b_btm"></span>
                     </a>
@@ -280,7 +277,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <img src="<?php echo $assets_url;?>images/pic4.jpg" alt=""/>
                         <h3>branded bags</h3>
                         <div class="price">
-                            <h4>$300<span>indulge</span></h4>
+                            <h4>$300<span>Xem</span></h4>
                         </div>
                         <span class="b_btm"></span>
                     </a>
@@ -290,7 +287,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <img src="<?php echo $assets_url;?>images/pic5.jpg" alt=""/>
                         <h3>ems women bag</h3>
                         <div class="price">
-                            <h4>$300<span>indulge</span></h4>
+                            <h4>$300<span>Xem</span></h4>
                         </div>
                         <span class="b_btm"></span>
                     </a>
@@ -300,7 +297,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <img src="<?php echo $assets_url;?>images/pic6.jpg" alt=""/>
                         <h3>branded cargos</h3>
                         <div class="price">
-                            <h4>$300<span>indulge</span></h4>
+                            <h4>$300<span>Xem</span></h4>
                         </div>
                         <span class="b_btm"></span>
                     </a>
