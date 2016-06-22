@@ -9,7 +9,7 @@ class Posts extends Model
     protected $guarded = [];
     public function comments()
     {
-        return $this->hasMany('App\Comments','on_post');
+//        return $this->hasMany('App\Comments','on_post');
     }
 
     public function author()
