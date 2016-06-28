@@ -44,9 +44,22 @@ class AgencyController extends Controller
             return $this->responseClient($check_params['message'], 500);
         }
 
+        // check user exist or not
+        if (array_key_exists('email', $_GET)) {
+            $agency = Agency::where('email', $_GET['email'])->first();
+            if ($agency) {
+                return $this->responseClient('Email is used', 500);
+            }
+        }
+        if (array_key_exists('phone_number', $_GET)) {
+            $agency = Agency::where('phone_number', $_GET['phone_number'])->first();
+            if ($agency) {
+                return $this->responseClient('Phone number is used', 500);
+            }
+        }
+
         // save data
-        $agency = new Agency();
-        $agency->create($_GET);
+        Agency::create($_GET);
         return $this->responseClient('ok', 200);
     }
 
@@ -54,6 +67,10 @@ class AgencyController extends Controller
         $data = $_GET;
         if (count($data) == 0) {
             return array('valid' => false, 'message' => 'empty data');
+        }
+
+        if (!array_key_exists('email', $data) && !array_key_exists('phone_number', $data)) {
+            return array('valid' => false, 'message' => 'both email and phone number are missing');
         }
 
         // email

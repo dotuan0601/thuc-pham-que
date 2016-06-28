@@ -19,11 +19,12 @@ class CreateAgencyTable extends Migration
             $table->char('full_name')->nullable()->default(null);
             $table->char('email')->nullable()->default(null);
             $table->char('phone_number')->nullable()->default(null);
+            $table->char('password')->nullable()->default(null);
             $table->text('facebook')->nullable()->default(null);
             $table->char('avatar')->nullable()->default(null);
-            $table->boolean('is_actived');
-            $table->boolean('is_blocked');
-            $table->double('average_point');
+            $table->boolean('is_actived')->default(1);
+            $table->boolean('is_blocked')->default(0);
+            $table->double('average_point')->default(0);
             $table->char('register_source')->nullable()->default(null);
             $table->text('address')->nullable()->default(null);
             $table->timestamps();
