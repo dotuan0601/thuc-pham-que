@@ -23,6 +23,8 @@
 //Route::get('/','HomeController@index');
 //Route::get('/about','HomeController@about');
 
+Route::resource('agency', 'AgencyController');
+
 Route::get('/trangchu', 'HomeController@index');
 
 Route::get('/','PostController@index');
