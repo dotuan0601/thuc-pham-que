@@ -34,6 +34,14 @@ Route::get('/dangky', function (){
     return view('user/dangky');
 });
 
+Route::get('/agenceList', function (){
+    return view('agence/list');
+});
+
+Route::get('/agenceDetail', function (){
+    return view('agence/detail');
+});
+
 //authentication
 Route::controllers([
     'auth' => 'Auth\AuthController',

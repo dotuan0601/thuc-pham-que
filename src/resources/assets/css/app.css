@@ -1,0 +1,102 @@
+.btn {
+    margin-top: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-appearance: none;
+    cursor: pointer;
+    color: #ffffff;
+    background: #3CC395;
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 12px 38px;
+    font-size: 0.875em;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    align-items: flex-start;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    text-rendering: auto;
+}
+
+.btn:hover {
+    background: #555555;
+    color: #ffffff;
+}
+
+.btn.black {
+    background: #555555;
+    color: #fff;
+}
+
+.btn.black:hover {
+    background: #3CC395;
+}
+
+.right {
+    float: right;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+th {
+    text-align: left;
+    font-weight: bold;
+    display: table-cell;
+    line-height: 1.42857143;
+    vertical-align: bottom;
+    border-bottom: 1px solid #ddd !important;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    font-size: 0.85em;
+    color: #999;
+    border-top: none !important;
+    padding: 15px !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+
