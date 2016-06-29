@@ -2,153 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76001a5b-ca2b-4e1f-9fee-28600ccd4893" name="Default" comment="add to git ignore">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/fonts/Amble-Regular-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/fonts/BebasNeue-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/0001-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/0001-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/0001-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/0001-4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/0001-5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/arrow-next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/arrow-prev.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/art.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/c-arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/c1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/c2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/c3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/delivery.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/det_pic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/det_pic1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/det_pic2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/det_pic3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/down_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/gpluse.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/icon1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/icon2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/icon3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/icon4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/icon5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/icon6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/large/0001-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/large/0001-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/large/0001-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/large/0001-4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/large/0001-5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/large/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/nav_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/pic1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/pic2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/pic3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/pic4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/pic5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/pic6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/rss.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/sale_pic1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/sale_pic10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/sale_pic11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/sale_pic12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/sale_pic2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/sale_pic3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/sale_pic4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/sale_pic5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/sale_pic6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/sale_pic7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/sale_pic8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/sale_pic9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/search_h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/shoe_pic1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/shoe_pic2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/shoe_pic3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/shoe_pic4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/shoe_pic5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/shoe_pic6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/slider1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/slider2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/slider3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/slider4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/slider5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/slider_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/small/0001-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/small/0001-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/small/0001-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/small/0001-4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/small/0001-5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/small/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/top_move.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/up_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/w_pic1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/w_pic2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/w_pic3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/w_pic4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/w_pic5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/images/w_pic6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/accessories.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/contact.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/css/owl.carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/css/productviewgallery.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/css/slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/details.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/handbags.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/js/cloud-zoom.1.0.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/js/easing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/js/fliplightbox.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/js/jquery.cslider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/js/jquery.easing.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/js/jquery.fancybox-buttons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/js/jquery.fancybox-thumbs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/js/jquery.fancybox.pack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/js/jquery.mixitup.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/js/modernizr.custom.28468.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/js/move-top.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/js/owl.carousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/js/productviewgallery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/js/responsive.menu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/sale.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/service.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/shoes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/.gitattributes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/basic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/bordered-table.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/contextual.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/heavy.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/javascripts/jquery-1.9.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/javascripts/jquery.heavyTable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/javascripts/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/striped-rows.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/stylesheets/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/stylesheets/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/table/table-row-hover.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/w3layouts-license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/web/wallets.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" />
     </list>
     <list id="2e2182f2-5c90-46c8-aaf8-8de5663f0155" name="Failed commit: Default" comment="add to git ignore" />
     <ignored path="thuc-pham-que.iws" />
@@ -174,16 +28,19 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+            <state relative-caret-position="272">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
               <folding>
                 <element signature="e#7#392#0#PHP" expanded="true" />
+                <marker date="1467218900764" expanded="true" signature="466:694" ph="//..." />
+                <marker date="1467218900764" expanded="true" signature="918:975" ph="..." />
+                <marker date="1467218900764" expanded="true" signature="941:974" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AgencyController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AgencyController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/AgencyController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
@@ -191,6 +48,16 @@
               <folding>
                 <element signature="e#40#55#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/resources/views/agence/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -210,16 +77,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -273,8 +130,8 @@
         <option value="$PROJECT_DIR$/src/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/src/database/migrations/2016_06_20_035507_create_agency_table.php" />
         <option value="$PROJECT_DIR$/src/app/Agency.php" />
-        <option value="$PROJECT_DIR$/src/app/Http/Controllers/AgencyController.php" />
         <option value="$PROJECT_DIR$/src/.gitignore" />
+        <option value="$PROJECT_DIR$/src/app/Http/Controllers/AgencyController.php" />
       </list>
     </option>
   </component>
@@ -289,9 +146,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-14" />
-    <option name="width" value="1936" />
-    <option name="height" value="1051" />
+    <option name="x" value="313" />
+    <option name="width" value="1060" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -300,7 +157,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -318,6 +175,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -346,7 +204,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,17 +218,64 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thuc-pham-que" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thuc-pham-que" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agence" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thuc-pham-que" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thuc-pham-que" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -380,6 +285,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\thuc-pham-que\src\resources\views\agence" />
       <recent name="E:\thuc-pham-que\template" />
     </key>
   </component>
@@ -440,6 +346,7 @@
       <workItem from="1467070784638" duration="4965000" />
       <workItem from="1467097105656" duration="4452000" />
       <workItem from="1467101627949" duration="3156000" />
+      <workItem from="1467218943504" duration="97000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1465878269107</created>
@@ -480,13 +387,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23558000" />
+    <option name="totallyTimeSpent" value="23655000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-14" y="0" width="1936" height="1051" extended-state="0" />
-    <editor active="false" />
+    <frame x="313" y="0" width="1060" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17708333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.231" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -532,14 +439,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/Agency.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -548,14 +447,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" />
     <entry file="file://$PROJECT_DIR$/src/database/migrations/2016_06_20_035507_create_agency_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -578,6 +470,9 @@
           <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
           <folding>
             <element signature="e#7#392#0#PHP" expanded="true" />
+            <marker date="1467218900764" expanded="true" signature="466:694" ph="//..." />
+            <marker date="1467218900764" expanded="true" signature="918:975" ph="..." />
+            <marker date="1467218900764" expanded="true" signature="941:974" ph="..." />
           </folding>
         </state>
       </provider>
@@ -596,7 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -612,7 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -628,7 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,7 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,7 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -676,7 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -692,7 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -708,7 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,7 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -756,7 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -772,7 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,7 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,7 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,47 +714,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        <state relative-caret-position="272">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
           <folding>
             <element signature="e#7#392#0#PHP" expanded="true" />
+            <marker date="1467218900764" expanded="true" signature="466:694" ph="//..." />
+            <marker date="1467218900764" expanded="true" signature="918:975" ph="..." />
+            <marker date="1467218900764" expanded="true" signature="941:974" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vendor/symfony/http-foundation/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Http/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Auth/Access/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Support/Facades/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendor/symfony/http-foundation/Response.php" />
+    <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Http/Response.php" />
+    <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Auth/Access/Response.php" />
+    <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Support/Facades/Response.php" />
     <entry file="file://$PROJECT_DIR$/src/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="24" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -888,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -896,7 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -916,14 +773,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" />
     <entry file="file://$PROJECT_DIR$/src/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -939,6 +789,14 @@
           <folding>
             <element signature="e#40#55#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/views/agence/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
