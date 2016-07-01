@@ -33,7 +33,9 @@ Route::get('/home',['as' => 'home', 'uses' => 'PostController@index']);
 Route::get('/dangky', function (){
     return view('user/dangky');
 });
-
+Route::get('/agence', function (){
+    return view('agence/index');
+});
 Route::get('/agenceList', function (){
     return view('agence/list');
 });
