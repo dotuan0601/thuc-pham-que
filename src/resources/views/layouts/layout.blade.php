@@ -1,0 +1,12 @@
+<html>
+<head>
+    @include('includes.head')
+</head>
+<body>
+<div>
+    @include('includes.menu')
+    @yield('content')
+    @include('includes.footer')
+</div>
+</body>
+</html>

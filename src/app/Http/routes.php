@@ -33,15 +33,15 @@ Route::get('/home',['as' => 'home', 'uses' => 'PostController@index']);
 Route::get('/dangky', function (){
     return view('user/dangky');
 });
-Route::get('/agence', function (){
-    return view('agence/index');
+Route::get('/agency', function (){
+    return view('agency/index');
 });
-Route::get('/agenceList', function (){
-    return view('agence/list');
+Route::get('/agencyList', function (){
+    return view('agency/list');
 });
 
-Route::get('/agenceDetail', function (){
-    return view('agence/detail');
+Route::get('/agencyDetail', function (){
+    return view('agency/detail');
 });
 
 Route::get('/product', function (){

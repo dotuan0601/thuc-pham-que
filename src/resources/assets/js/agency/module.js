@@ -1,4 +1,4 @@
-var app = angular.module('agenceModule', ['ngRoute']);
+var app = angular.module('AgencyModule', ['ngRoute']);
 
 // configure our routes
 app.config(function ($routeProvider) {
@@ -6,20 +6,20 @@ app.config(function ($routeProvider) {
 
     // route for the list page
         .when('/list', {
-            templateUrl: 'agenceList',
-            controller: 'listController'
+            templateUrl: 'agencyList',
+            controller: 'ListController'
         })
 
         // route for the add page
         .when('/detail', {
-            templateUrl: 'agenceDetail',
-            controller: 'detailController'
+            templateUrl: 'agencyDetail',
+            controller: 'DetailController'
         })
 
         // route for the add page
         .when('/detail/:id', {
-            templateUrl: 'agenceDetail',
-            controller: 'detailController'
+            templateUrl: 'agencyDetail',
+            controller: 'DetailController'
         })
 
         .otherwise({
