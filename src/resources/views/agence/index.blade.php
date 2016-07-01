@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
 <?php
-$assets_url = 'resources/assets/';
+$assets_url = 'resources/assets1/';
 ?>
 
         <!DOCTYPE HTML>

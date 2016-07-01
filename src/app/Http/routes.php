@@ -44,6 +44,13 @@ Route::get('/agenceDetail', function (){
     return view('agence/detail');
 });
 
+Route::get('/product', function (){
+    return view('product/index');
+});
+Route::get('/productList', function (){
+    return view('product/list');
+});
+
 //authentication
 Route::controllers([
     'auth' => 'Auth\AuthController',

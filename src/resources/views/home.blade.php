@@ -1,5 +1,5 @@
 <?php
-    $assets_url = 'resources/assets/';
+    $assets_url = 'resources/assets1/';
 ?>
 
 
