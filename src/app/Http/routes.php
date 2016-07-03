@@ -27,28 +27,48 @@ Route::resource('agency', 'AgencyController');
 
 Route::get('/trangchu', 'HomeController@index');
 
-Route::get('/','PostController@index');
-Route::get('/home',['as' => 'home', 'uses' => 'PostController@index']);
+Route::get('/', 'PostController@index');
+Route::get('/home', ['as' => 'home', 'uses' => 'PostController@index']);
 
-Route::get('/dangky', function (){
+Route::get('/dangky', function () {
     return view('user/dangky');
 });
-Route::get('/agency', function (){
+Route::get('/agency', function () {
     return view('agency/index');
 });
-Route::get('/agencyList', function (){
+Route::get('/agencyList', function () {
     return view('agency/list');
 });
 
-Route::get('/agencyDetail', function (){
+Route::get('/agencyDetail', function () {
     return view('agency/detail');
 });
+Route::get('/agencyInfo', function () {
+    return view('agency/info');
+});
+Route::get('/agencyManage', function () {
+    return view('agency/manage');
+});
 
-Route::get('/product', function (){
+Route::get('/product', function () {
     return view('product/index');
 });
-Route::get('/productList', function (){
+Route::get('/productList', function () {
     return view('product/list');
+});
+
+Route::get('/home', function () {
+    return view('home/index');
+});
+Route::get('/search', function () {
+    return view('home/search');
+});
+
+Route::get('/order', function () {
+    return view('order/index');
+});
+Route::get('/orderList', function () {
+    return view('order/list');
 });
 
 //authentication
@@ -57,31 +77,30 @@ Route::controllers([
     'password' => 'Auth\PasswordController',
 ]);
 // Kiểm tra người dùng đăng nhập
-Route::group(['middleware' => ['auth']], function()
-{
+Route::group(['middleware' => ['auth']], function () {
     // hiển thị bài viết mới
-    Route::get('new-post','PostController@create');
+    Route::get('new-post', 'PostController@create');
     // Lưu bài viết
-    Route::post('new-post','PostController@save');
+    Route::post('new-post', 'PostController@save');
     // Sửa bài viết
-    Route::get('edit/{slug}','PostController@edit');
+    Route::get('edit/{slug}', 'PostController@edit');
     // Cập nhật bài viết
-    Route::post('update','PostController@update');
+    Route::post('update', 'PostController@update');
     // Xóa bài viết
-    Route::get('delete/{id}','PostController@delete');
+    Route::get('delete/{id}', 'PostController@delete');
     // Hiển thị danh sách bài viết của User
-    Route::get('my-all-posts','UserController@user_posts_all');
+    Route::get('my-all-posts', 'UserController@user_posts_all');
     // Danh sách bài lưu nháp
-    Route::get('my-drafts','UserController@user_posts_draft');
+    Route::get('my-drafts', 'UserController@user_posts_draft');
     // Thêm comments
-    Route::post('comment/add','CommentController@add');
+    Route::post('comment/add', 'CommentController@add');
     // Xóa comment
-    Route::post('comment/delete/{id}','CommentController@delete');
+    Route::post('comment/delete/{id}', 'CommentController@delete');
 });
 //Quản lý User
-Route::get('user/{id}','UserController@profile')->where('id', '[0-9]+');
+Route::get('user/{id}', 'UserController@profile')->where('id', '[0-9]+');
 
 // Bài viết của User
-Route::get('user/{id}/posts','UserController@user_posts')->where('id', '[0-9]+');
+Route::get('user/{id}/posts', 'UserController@user_posts')->where('id', '[0-9]+');
 // Bài duy nhất
-Route::get('/{slug}',['as' => 'post', 'uses' => 'PostController@show'])->where('slug', '[A-Za-z0-9-_]+');
+Route::get('/{slug}', ['as' => 'post', 'uses' => 'PostController@show'])->where('slug', '[A-Za-z0-9-_]+');

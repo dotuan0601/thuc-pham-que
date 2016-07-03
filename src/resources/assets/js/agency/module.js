@@ -11,15 +11,19 @@ app.config(function ($routeProvider) {
         })
 
         // route for the add page
-        .when('/detail', {
+        .when('/detail/:id', {
             templateUrl: 'agencyDetail',
             controller: 'DetailController'
         })
 
-        // route for the add page
-        .when('/detail/:id', {
-            templateUrl: 'agencyDetail',
-            controller: 'DetailController'
+        .when('/info/:id', {
+            templateUrl: 'agencyInfo',
+            controller: 'InfoController'
+        })
+
+        .when('/manage/:id', {
+            templateUrl: 'agencyManage',
+            controller: 'ManageController'
         })
 
         .otherwise({

@@ -1,6 +1,3 @@
-app.factory('AgencyService', function () {
-    return {
-        agencies: [],
-        index: 1
-    };
-});
+app.service('AgencyService', ['$http', function ($http) {
+
+}]);

@@ -12,7 +12,9 @@
 <!--[if lte IE 8]>
 <link rel="stylesheet" href="<?php echo $assets_url;?>css/leaflet.ie.css"/>
 <![endif]-->
-<link rel="stylesheet" href="<?php echo $assets_url;?>css/main.css">
+<link rel="stylesheet" href="<?php echo $assets_url;?>css/main-custom.css">
+
+<link rel="stylesheet" href="<?php echo $assets_url;?>css/app.css">
 
 <!-- Javascripts -->
 <script src="<?php echo $assets_url;?>js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
