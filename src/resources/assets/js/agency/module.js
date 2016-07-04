@@ -1,4 +1,4 @@
-var app = angular.module('AgencyModule', ['ngRoute']);
+var app = angular.module('AgencyModule', ['ngRoute', 'ui.bootstrap']);
 
 // configure our routes
 app.config(function ($routeProvider) {
@@ -19,6 +19,11 @@ app.config(function ($routeProvider) {
         .when('/info/:id', {
             templateUrl: 'agencyInfo',
             controller: 'InfoController'
+        })
+
+        .when('/manage', {
+            templateUrl: 'agencyManage',
+            controller: 'ManageController'
         })
 
         .when('/manage/:id', {

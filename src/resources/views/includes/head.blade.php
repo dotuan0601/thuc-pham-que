@@ -30,3 +30,4 @@
 
 <script src="<?php echo $assets_url;?>js/angular.min.js"></script>
 <script src="<?php echo $assets_url;?>js/angular-route.min.js"></script>
+<script src="<?php echo $assets_url;?>js/ui-bootstrap-tpls-1.3.3.min.js"></script>
