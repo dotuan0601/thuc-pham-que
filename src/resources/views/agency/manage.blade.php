@@ -129,49 +129,83 @@ $assets_url = 'resources/assets/';
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="product in agencyProducts | filter:{categoryId:selectedCategoryId}">
-                                <td><span ng-bind="product.name"></span></td>
-                                <td>image</td>
-                                <td><span ng-bind="(units | filter:{id:product.unitId})[0].name"></span></td>
-                                <td><span ng-bind="product.price"></span> đ/<span
-                                            ng-bind="(units | filter:{id:product.unitId})[0].name"></span>
+                            <tr ng-form="namesForm_@{{$index}}"
+                                ng-repeat="product in agencyProducts | filter:{categoryId:selectedCategoryId}">
+                                <td>
+                                    <span ng-if="!product.isEdit" ng-bind="product.name"></span>
+                                    <input ng-if="product.isEdit" class="form-control" type="text" placeholder=""
+                                           required ng-model="product.editProduct.name"
+                                           typeahead-on-select="selectProduct($item, product.editProduct)"
+                                           uib-typeahead="p as p.name for p in products | filter:{name:$viewValue} | limitTo:5">
                                 </td>
                                 <td>
-                                    <button class="btn btn-sm btn-primary"><?php echo trans('label.edit');?></button>
-                                    <button class="btn btn-sm btn-danger"><?php echo trans('label.delete');?></button>
+                                    image
+                                </td>
+                                <td>
+                                    <span ng-if="!product.isEdit"
+                                          ng-bind="(units | filter:{id:product.unitId})[0].name"></span>
+                                    <select ng-if="product.isEdit" class="form-control"
+                                            ng-model="product.editProduct.productUnit" required
+                                            ng-init="product.editProduct.productUnit = (units | filter:{id:product.editProduct.unitId})[0]"
+                                            ng-options="unit as unit.name for unit in units track by unit.id">
+                                    </select>
+                                </td>
+                                <td>
+                                    <div ng-if="!product.isEdit">
+                                        <span ng-bind="product.price"></span>
+                                        đ/<span ng-bind="(units | filter:{id:product.unitId})[0].name"></span>
+                                    </div>
+                                    <div ng-if="product.isEdit" class="input-group">
+                                        <input class="form-control" type="text" placeholder="" required
+                                               ng-model="product.editProduct.price">
+                                            <span class="input-group-addon">
+                                                đ/<span ng-bind="product.editProduct.productUnit.name"></span>
+                                            </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button ng-if="!product.isEdit" class="btn btn-sm btn-primary"
+                                            ng-click="editProduct(product)"><?php echo trans('label.edit');?></button>
+                                    <button ng-if="!product.isEdit" class="btn btn-sm btn-danger"
+                                            ng-click="deleteProduct(product)"><?php echo trans('label.delete');?></button>
+                                    <button ng-if="product.isEdit" class="btn btn-sm"
+                                            ng-disabled="namesForm_@{{$index}}.$invalid"
+                                            ng-click="saveProduct(product)"><?php echo trans('label.save');?></button>
+                                    <button ng-if="product.isEdit" class="btn btn-sm btn-grey"
+                                            ng-click="product.isEdit=false"><?php echo trans('label.cancel');?></button>
                                 </td>
                             </tr>
                             </tbody>
                             <tfoot ng-form="foodForm">
                             <tr>
                                 <td><input class="form-control" type="text" placeholder="" required
-                                           ng-model="selectedProduct"
-                                           typeahead-on-select="selectProduct($item, $model, $label)"
+                                           ng-model="addProduct.product"
+                                           typeahead-on-select="selectProduct($item, addProduct)"
                                            uib-typeahead="product as product.name for product in products | filter:{name:$viewValue} | limitTo:5">
                                 </td>
                                 <td>
                                     <div class="input-group">
                                         <label class="input-group-btn">
                                                 <span class="btn btn-primary">
-                                                    <?php echo trans('label.browse');?><input type="file"
-                                                                                              style="display: none;">
+                                                    <?php echo trans('label.browse');?>
+                                                    <input type="file" style="display: none;">
                                                 </span>
                                         </label>
                                         <input type="text" class="form-control" readonly>
                                     </div>
                                 </td>
                                 <td>
-                                    <select class="form-control" ng-model="addProductUnit" required
-                                            ng-init="addProductUnit=units[0]"
+                                    <select class="form-control" ng-model="addProduct.productUnit" required
+                                            ng-init="addProduct.productUnit=units[0]"
                                             ng-options="unit as unit.name for unit in units track by unit.id">
                                     </select>
                                 </td>
                                 <td>
                                     <div class="input-group">
                                         <input class="form-control" type="text" placeholder="" required
-                                               ng-model="addProductPrice" aria-describedby="basic-addon1">
+                                               ng-model="addProduct.price" aria-describedby="basic-addon1">
                                             <span class="input-group-addon" id="basic-addon1">
-                                                đ/<span ng-bind="addProductUnit.name"></span>
+                                                đ/<span ng-bind="addProduct.productUnit.name"></span>
                                             </span>
                                     </div>
                                 </td>

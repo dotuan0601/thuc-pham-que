@@ -120,21 +120,46 @@ app.controller('ManageController', function ($scope, $routeParams, $location, Ag
         }
     };
 
-    // Select product
-    $scope.selectProduct = function ($item) {
-        $scope.addProductUnit = $scope.units.filter(function (unit) {
+    // Select product from typeahead
+    $scope.selectProduct = function ($item, product) {
+        product.name = $item.name;
+        product.productUnit = $scope.units.filter(function (unit) {
             return unit.id == $item.unitId;
         })[0];
-        $scope.addProductPrice = $item.price;
+        product.price = $item.price;
     };
 
     // Add product
     $scope.addProduct = function () {
         $scope.agencyProducts.push({
-            name: $scope.selectedProduct.name ? $scope.selectedProduct.name : $scope.selectedProduct,
+            name: $scope.addProduct.product.name ? $scope.addProduct.product.name : $scope.addProduct.product,
             categoryId: $scope.selectedCategoryId,
-            unitId: $scope.addProductUnit.id,
-            price: $scope.addProductPrice
+            unitId: $scope.addProduct.productUnit.id,
+            price: $scope.addProduct.price
         });
+    };
+
+    // Edit product
+    $scope.editProduct = function (product) {
+        // Bind product info to input
+        product.editProduct = $.extend(true, {}, product);
+
+        // Change to edit mode
+        product.isEdit = true;
+    };
+
+    // Save product
+    $scope.saveProduct = function (product) {
+        product.name = product.editProduct.name;
+        product.unitId = product.editProduct.productUnit.id;
+        product.price = product.editProduct.price;
+
+        // Remove to edit mode
+        product.isEdit = false;
+    };
+
+    // Edit product
+    $scope.deleteProduct = function (product) {
+        $scope.agencyProducts.splice($scope.agencyProducts.indexOf(product), 1);
     };
 });

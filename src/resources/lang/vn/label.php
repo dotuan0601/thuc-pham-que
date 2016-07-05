@@ -43,6 +43,7 @@ return [
     'delete' => 'Xóa',
     'browse' => 'Chọn',
     'save' => 'Lưu',
+    'cancel' => 'Hủy',
     'agency_info' => 'Thông tin đại lý',
     'replace' => 'Thay đổi',
 ];
