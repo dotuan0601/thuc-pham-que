@@ -1,33 +1,36 @@
-app.directive('fileModel', ['$parse', function ($parse) {
+app.directive("myFileSelect", function () {
     return {
         restrict: 'A',
-        link: function (scope, element, attrs) {
-            var model = $parse(attrs.fileModel);
-            var modelSetter = model.assign;
+        scope: {
+            limitFile: '=?',
+            fileList: '=',
+            addFileToList: '&'
+        },
+        link: function (scope, element) {
+            element.bind("change", function (e) {
 
-            element.bind('change', function () {
-                scope.$apply(function () {
-                    modelSetter(scope, element[0].files[0]);
-                });
+                var files = (e.srcElement || e.target).files;
+                if (files && files.length) {
+                    var reader;
+                    scope.fileList = scope.fileList ? scope.fileList : [];
+                    scope.limitFile = scope.limitFile || scope.limitFile == 0 ? scope.limitFile : 1;
+                    var count = 0;
+                    var limit = Math.min(files.length, scope.limitFile);
+                    for (i = 0; i < limit; i++) {
+                        reader = new FileReader();
+                        reader.file = files[i];
+                        reader.onload = (function (event) {
+                            scope.fileList.push({
+                                id: new Date().getTime(),
+                                src: event.target.result,
+                                file: event.target.file
+                            });
+                            scope.$apply();
+                        });
+                        reader.readAsDataURL(files[i]);
+                    }
+                }
             });
         }
-    };
-}]);
-
-app.service('fileUpload', ['$http', function ($http) {
-    this.uploadFileToUrl = function (file, uploadUrl) {
-        var fd = new FormData();
-        fd.append('file', file);
-
-        return $http.post(uploadUrl, fd, {
-            transformRequest: angular.identity,
-            headers: {'Content-Type': undefined}
-        });
-
-            // .success(function () {
-            // })
-            //
-            // .error(function () {
-            // });
     }
-}]);
+});

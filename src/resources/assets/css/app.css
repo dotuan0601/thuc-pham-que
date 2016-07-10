@@ -199,3 +199,44 @@
 .form-group img {
     height: 100px;
 }
+
+.product-img, .product-img.input-group label, .product-img-list {
+    float: left;
+}
+
+.product-img img {
+    height: 80px;
+    margin: 3px;
+}
+
+.product-img.input-group {
+    padding: 3px;
+}
+
+.product-img-list {
+    padding: 5px 3px;
+}
+
+.product-img-list img {
+    height: 30px;
+}
+
+/*.product-img-list.editable img:hover {*/
+    /*border: solid 2px #7FBA00;*/
+/*}*/
+
+.product-img-list.editable.selected img {
+    /*box-shadow: 0 0 16px rgba(35, 173, 278, 1);*/
+    outline: solid 4px #99FF46;
+}
+
+.product-img-list .glyphicon-remove-circle {
+    width: 15px;
+    height: 15px;
+    top: -10px;
+    right: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 0 0 -10px;
+}

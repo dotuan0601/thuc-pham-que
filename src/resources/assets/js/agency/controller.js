@@ -30,7 +30,7 @@ app.controller('DetailController', function ($scope, $routeParams, $location, Ag
 app.controller('InfoController', function ($scope, $routeParams, $location, AgencyService) {
 });
 
-app.controller('ManageController', function ($scope, $routeParams, $location, AgencyService, fileUpload) {
+app.controller('ManageController', function ($scope, $routeParams, $location, AgencyService) {
     // Get agency info
     // AgencyService.getAgencyById($routeParams.id)
     //     .success(function (result) {
@@ -61,16 +61,38 @@ app.controller('ManageController', function ($scope, $routeParams, $location, Ag
     ];
 
     $scope.agencyProducts = [
-        {id: 1, name: "Thịt lợn", categoryId: 1, unitId: 1, price: 180000},
-        {id: 2, name: "Thịt bò", categoryId: 1, unitId: 1, price: 250000},
+        {
+            id: 1, name: "Thịt lợn", categoryId: 1, unitId: 1, price: 180000, image: "product1.jpg",
+            imageList: "product1.jpg;product2.jpg;product2.jpg"
+        },
+        {
+            id: 2, name: "Thịt bò", categoryId: 1, unitId: 1, price: 250000, image: "product1.jpg",
+            imageList: "product1.jpg;product2.jpg;product3.jpg"
+        },
         {id: 3, name: "Thịt gà", categoryId: 1, unitId: 1, price: 200000},
         {id: 4, name: "Rau muống", categoryId: 2, unitId: 2, price: 8000},
         {id: 5, name: "Rau cải", categoryId: 2, unitId: 2, price: 10000}
     ];
 
     $scope.products = [
-        {id: 1, name: "Thịt lợn", categoryId: 1, unitId: 1, price: 180000},
-        {id: 2, name: "Thịt bò", categoryId: 1, unitId: 1, price: 250000},
+        {
+            id: 1,
+            name: "Thịt lợn",
+            categoryId: 1,
+            unitId: 1,
+            price: 180000,
+            image: "product1.jpg",
+            imageList: "product1.jpg;product1.jpg;product1.jpg"
+        },
+        {
+            id: 2,
+            name: "Thịt bò",
+            categoryId: 1,
+            unitId: 1,
+            price: 250000,
+            image: "product1.jpg",
+            imageList: "product1.jpg;product1.jpg;product1.jpg"
+        },
         {id: 3, name: "Thịt gà", categoryId: 1, unitId: 1, price: 200000},
         {id: 4, name: "Rau muống", categoryId: 2, unitId: 2, price: 8000},
         {id: 5, name: "Rau cải", categoryId: 2, unitId: 2, price: 10000},
@@ -87,30 +109,17 @@ app.controller('ManageController', function ($scope, $routeParams, $location, Ag
 
     // Get agency avatar or from selected image
     $scope.getAvatar = function () {
-        if ($scope.image_source)
-            return $scope.image_source;
+        if ($scope.agency.avatarList && $scope.agency.avatarList.length)
+            return $scope.agency.avatarList[$scope.agency.avatarList.length - 1].src;
         if ($scope.agency && $scope.agency.avatar)
             return 'resources/assets/img/' + $scope.agency.avatar;
         return 'resources/assets/img/user.png';
     };
 
-    // Select avatar
-    $scope.setFile = function (element) {
-        $scope.currentFile = element.files[0];
-        var reader = new FileReader();
-
-        reader.onload = function (event) {
-            $scope.image_source = event.target.result;
-            $scope.$apply();
-        };
-        // when the file is read it triggers the onload event above.
-        reader.readAsDataURL(element.files[0]);
-    };
-
     // Click button save common info
     $scope.save = function () {
         // Upload avatar
-        if ($scope.image_source) {
+        if ($scope.avatarUpload) {
             fileUpload.uploadFileToUrl($scope.avatar, 'public')
                 .success(function (result) {
                 })
@@ -135,8 +144,13 @@ app.controller('ManageController', function ($scope, $routeParams, $location, Ag
             name: $scope.addProduct.product.name ? $scope.addProduct.product.name : $scope.addProduct.product,
             categoryId: $scope.selectedCategoryId,
             unitId: $scope.addProduct.productUnit.id,
-            price: $scope.addProduct.price
+            price: $scope.addProduct.price,
+            image: $scope.addProduct.image,
+            imageList: $scope.addProduct.imageList,
+            imageFiles: $scope.addProduct.imageFiles
         });
+
+        $scope.addProduct = {};
     };
 
     // Edit product
@@ -153,6 +167,9 @@ app.controller('ManageController', function ($scope, $routeParams, $location, Ag
         product.name = product.editProduct.name;
         product.unitId = product.editProduct.productUnit.id;
         product.price = product.editProduct.price;
+        product.image = product.editProduct.image;
+        product.imageList = product.editProduct.imageList;
+        product.imageFiles = product.editProduct.imageFiles;
 
         // Remove to edit mode
         product.isEdit = false;
@@ -161,5 +178,65 @@ app.controller('ManageController', function ($scope, $routeParams, $location, Ag
     // Edit product
     $scope.deleteProduct = function (product) {
         $scope.agencyProducts.splice($scope.agencyProducts.indexOf(product), 1);
+    };
+
+    // Delete image
+    $scope.deleteImage = function (img, product) {
+        var list = [];
+        if (product.imageList) list = product.imageList.split(';');
+
+        // If image in imageFiles
+        if (img.src && product.imageFiles) {
+            // Delete from imageFiles
+            product.imageFiles.splice(product.imageFiles.indexOf(img), 1);
+        }
+
+        // Else
+        else {
+            // Delete from imageList
+            list.splice(list.indexOf(img), 1);
+            product.imageList = list.length ? list.join(';') : null;
+        }
+
+        // Reselect main image
+        if ($.inArray(product.image, list) == -1 && $.inArray(product.image, product.imageFiles) == -1)
+            product.image = list.length ? list[0] : null;
+        if (!product.image)
+            product.image = product.imageFiles.length ? product.imageFiles[0] : null;
+    };
+
+    // Get product image url
+    $scope.getImage = function (img) {
+        // If no image
+        if (!img) return 'resources/assets/img/no-img.jpg';
+
+        // If image is file
+        if (img.src) return img.src;
+
+        // If not base64 image
+        if (img.indexOf('data:image') == -1) return 'resources/assets/img/' + img;
+
+        return img;
+    };
+
+    $scope.getMainImage = function (product) {
+        // If no image and has image files
+        if (!product.image && product.imageFiles && product.imageFiles.length)
+            product.image = product.imageFiles[0];
+
+        return $scope.getImage(product.image);
+    };
+
+    // Get limit number of upload image
+    $scope.getLimitImage = function (product) {
+        var limit = 0;
+
+        if (product.imageList)
+            limit += product.imageList.split(';').length;
+
+        if (product.imageFiles)
+            limit += product.imageFiles.length;
+
+        return 6 - limit; // Limit 6 images per product
     };
 });

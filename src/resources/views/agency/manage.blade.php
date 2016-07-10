@@ -90,8 +90,8 @@ $assets_url = 'resources/assets/';
                                 <label class="img-select">
                                     <span class="btn btn-primary">
                                         <?php echo trans('label.replace');?>
-                                        <input type="file" style="display: none;" file-model="avatar" accept="image/*"
-                                               onchange="angular.element(this).scope().setFile(this)">
+                                        <input type="file" style="display: none;" accept="image/*" my-file-select
+                                               file-list="agency.avatarList">
                                     </span>
                                 </label>
                             </div>
@@ -122,9 +122,9 @@ $assets_url = 'resources/assets/';
                             <thead>
                             <tr>
                                 <th style="width: 20%"><?php echo trans('label.first_name');?></th>
-                                <th style="width: 20%"><?php echo trans('label.avatar');?></th>
-                                <th style="width: 20%"><?php echo trans('label.unit');?></th>
+                                <th style="width: 10%"><?php echo trans('label.unit');?></th>
                                 <th style="width: 20%"><?php echo trans('label.price');?></th>
+                                <th style="width: 30%"><?php echo trans('label.avatar');?></th>
                                 <th></th>
                             </tr>
                             </thead>
@@ -137,9 +137,6 @@ $assets_url = 'resources/assets/';
                                            required ng-model="product.editProduct.name"
                                            typeahead-on-select="selectProduct($item, product.editProduct)"
                                            uib-typeahead="p as p.name for p in products | filter:{name:$viewValue} | limitTo:5">
-                                </td>
-                                <td>
-                                    image
                                 </td>
                                 <td>
                                     <span ng-if="!product.isEdit"
@@ -164,6 +161,49 @@ $assets_url = 'resources/assets/';
                                     </div>
                                 </td>
                                 <td>
+                                    <div class="product-img">
+                                        <img alt="img" ng-if="!product.isEdit"
+                                             ng-src="@{{getMainImage(product)}}">
+                                        <img alt="img" ng-if="product.isEdit"
+                                             ng-src="@{{getMainImage(product.editProduct)}}">
+                                    </div>
+                                    <div ng-if="product.isEdit" class="product-img input-group">
+                                        <label class="input-group-btn">
+                                                <span class="btn btn-grey btn-sm">
+                                                    <?php echo trans('label.add');?>
+                                                    <input type="file" style="display: none;" accept="image/*" multiple
+                                                           file-list="product.editProduct.imageFiles" my-file-select
+                                                           limit-file="getLimitImage(product.editProduct)">
+                                                </span>
+                                        </label>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div ng-if="!product.isEdit" class="product-img-list"
+                                         ng-repeat="img in product.imageList.split(';') track by $index">
+                                        <img ng-src="@{{getImage(img)}}" alt="img">
+                                    </div>
+                                    <div ng-if="!product.isEdit" class="product-img-list"
+                                         ng-repeat="img in product.imageFiles track by $index">
+                                        <img ng-src="@{{getImage(img)}}" alt="img">
+                                    </div>
+                                    <div ng-if="product.isEdit"
+                                         ng-repeat="img in product.editProduct.imageList.split(';') track by $index"
+                                         class="product-img-list editable @{{img==product.editProduct.image?'selected':''}}">
+                                        <img ng-src="@{{getImage(img)}}" alt="img"
+                                             ng-click="product.editProduct.image=img">
+                                        <div ng-if="product.isEdit" class="glyphicon glyphicon-remove-circle"
+                                             ng-click="deleteImage(img, product.editProduct)"></div>
+                                    </div>
+                                    <div ng-if="product.isEdit"
+                                         ng-repeat="img in product.editProduct.imageFiles track by $index"
+                                         class="product-img-list editable @{{img.id==product.editProduct.image.id?'selected':''}}">
+                                        <img ng-src="@{{getImage(img)}}" alt="img"
+                                             ng-click="product.editProduct.image=img">
+                                        <div ng-if="product.isEdit" class="glyphicon glyphicon-remove-circle"
+                                             ng-click="deleteImage(img, product.editProduct)"></div>
+                                    </div>
+                                </td>
+                                <td>
                                     <button ng-if="!product.isEdit" class="btn btn-sm btn-primary"
                                             ng-click="editProduct(product)"><?php echo trans('label.edit');?></button>
                                     <button ng-if="!product.isEdit" class="btn btn-sm btn-danger"
@@ -184,17 +224,6 @@ $assets_url = 'resources/assets/';
                                            uib-typeahead="product as product.name for product in products | filter:{name:$viewValue} | limitTo:5">
                                 </td>
                                 <td>
-                                    <div class="input-group">
-                                        <label class="input-group-btn">
-                                                <span class="btn btn-primary">
-                                                    <?php echo trans('label.browse');?>
-                                                    <input type="file" style="display: none;">
-                                                </span>
-                                        </label>
-                                        <input type="text" class="form-control" readonly>
-                                    </div>
-                                </td>
-                                <td>
                                     <select class="form-control" ng-model="addProduct.productUnit" required
                                             ng-init="addProduct.productUnit=units[0]"
                                             ng-options="unit as unit.name for unit in units track by unit.id">
@@ -207,6 +236,29 @@ $assets_url = 'resources/assets/';
                                             <span class="input-group-addon" id="basic-addon1">
                                                 đ/<span ng-bind="addProduct.productUnit.name"></span>
                                             </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="product-img">
+                                        <img alt="img" ng-src="@{{getMainImage(addProduct)}}">
+                                    </div>
+                                    <div class="product-img input-group">
+                                        <label class="input-group-btn">
+                                                <span class="btn btn-grey btn-sm">
+                                                    <?php echo trans('label.add');?>
+                                                    <input type="file" style="display: none;" accept="image/*" multiple
+                                                           file-list="addProduct.imageFiles" my-file-select
+                                                           limit-file="getLimitImage(addProduct)">
+                                                </span>
+                                        </label>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div ng-repeat="img in addProduct.imageFiles track by $index"
+                                         class="product-img-list editable @{{img.id==addProduct.image.id?'selected':''}}">
+                                        <img ng-src="@{{getImage(img)}}" alt="img"
+                                             ng-click="addProduct.image=img">
+                                        <div class="glyphicon glyphicon-remove-circle"
+                                             ng-click="deleteImage(img, addProduct)"></div>
                                     </div>
                                 </td>
                                 <td>
