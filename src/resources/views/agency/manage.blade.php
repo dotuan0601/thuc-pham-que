@@ -19,21 +19,23 @@ $assets_url = 'resources/assets/';
         <div class="row tabbable">
 
             <!-- Sidebar -->
-            <div class="col-sm-3 blog-sidebar">
+            <div class="col-sm-2 blog-sidebar">
                 <ul class="custom-menu nav nav-pills nav-stacked blog-categories">
                     <li class="active"><a href="javascript:;" data-target="#tab1"
                                           data-toggle="tab"><?php echo trans('label.common_info');?></a></li>
                     <li><a href="javascript:;" data-target="#tab2"
-                           data-toggle="tab"><?php echo trans('label.food');?></a></li>
-                    <li><a href="javascript:;" data-target="tab" data-toggle="tab"><?php echo trans('label.food');?></a>
+                           data-toggle="tab"><?php echo trans('label.product');?></a></li>
+                    <li><a href="javascript:;" data-target="tab"
+                           data-toggle="tab"><?php echo trans('label.product');?></a>
                     </li>
-                    <li><a href="javascript:;" data-target="tab" data-toggle="tab"><?php echo trans('label.food');?></a>
+                    <li><a href="javascript:;" data-target="tab"
+                           data-toggle="tab"><?php echo trans('label.product');?></a>
                     </li>
                 </ul>
             </div>
 
 
-            <div class="col-sm-9 tab-content">
+            <div class="col-sm-10 tab-content">
                 <!-- Common info -->
                 <div class="basic-login tab-pane active" id="tab1">
                     <form role="form" name="infoForm" ng-submit="save()">
@@ -121,10 +123,10 @@ $assets_url = 'resources/assets/';
                         <table class="table custom-table">
                             <thead>
                             <tr>
-                                <th style="width: 20%"><?php echo trans('label.first_name');?></th>
-                                <th style="width: 10%"><?php echo trans('label.unit');?></th>
-                                <th style="width: 20%"><?php echo trans('label.price');?></th>
-                                <th style="width: 30%"><?php echo trans('label.avatar');?></th>
+                                <th><?php echo trans('label.first_name');?></th>
+                                <th class="hidden-xs"><?php echo trans('label.description');?></th>
+                                <th><?php echo trans('label.price');?></th>
+                                <th class="hidden-xs"><?php echo trans('label.avatar');?></th>
                                 <th></th>
                             </tr>
                             </thead>
@@ -132,138 +134,46 @@ $assets_url = 'resources/assets/';
                             <tr ng-form="namesForm_@{{$index}}"
                                 ng-repeat="product in agencyProducts | filter:{categoryId:selectedCategoryId}">
                                 <td>
-                                    <span ng-if="!product.isEdit" ng-bind="product.name"></span>
-                                    <input ng-if="product.isEdit" class="form-control" type="text" placeholder=""
-                                           required ng-model="product.editProduct.name"
-                                           typeahead-on-select="selectProduct($item, product.editProduct)"
-                                           uib-typeahead="p as p.name for p in products | filter:{name:$viewValue} | limitTo:5">
+                                    <span ng-bind="product.name"></span>
+                                </td>
+                                <td class="hidden-xs" style="max-width: 250px">
+                                    <span class="pre" ng-bind="product.description" popover-trigger="mouseenter"
+                                          uib-popover="@{{ product.description }}"></span>
                                 </td>
                                 <td>
-                                    <span ng-if="!product.isEdit"
-                                          ng-bind="(units | filter:{id:product.unitId})[0].name"></span>
-                                    <select ng-if="product.isEdit" class="form-control"
-                                            ng-model="product.editProduct.productUnit" required
-                                            ng-init="product.editProduct.productUnit = (units | filter:{id:product.editProduct.unitId})[0]"
-                                            ng-options="unit as unit.name for unit in units track by unit.id">
-                                    </select>
-                                </td>
-                                <td>
-                                    <div ng-if="!product.isEdit">
+                                    <div>
                                         <span ng-bind="product.price"></span>
                                         đ/<span ng-bind="(units | filter:{id:product.unitId})[0].name"></span>
                                     </div>
-                                    <div ng-if="product.isEdit" class="input-group">
-                                        <input class="form-control" type="text" placeholder="" required
-                                               ng-model="product.editProduct.price">
-                                            <span class="input-group-addon">
-                                                đ/<span ng-bind="product.editProduct.productUnit.name"></span>
-                                            </span>
-                                    </div>
                                 </td>
-                                <td>
+                                <td class="hidden-xs">
                                     <div class="product-img">
-                                        <img alt="img" ng-if="!product.isEdit"
-                                             ng-src="@{{getMainImage(product)}}">
-                                        <img alt="img" ng-if="product.isEdit"
-                                             ng-src="@{{getMainImage(product.editProduct)}}">
-                                    </div>
-                                    <div ng-if="product.isEdit" class="product-img input-group">
-                                        <label class="input-group-btn">
-                                                <span class="btn btn-grey btn-sm">
-                                                    <?php echo trans('label.add');?>
-                                                    <input type="file" style="display: none;" accept="image/*" multiple
-                                                           file-list="product.editProduct.imageFiles" my-file-select
-                                                           limit-file="getLimitImage(product.editProduct)">
-                                                </span>
-                                        </label>
+                                        <img alt="img" ng-src="@{{getImage(product.image)}}">
                                     </div>
                                     <div class="clearfix"></div>
-                                    <div ng-if="!product.isEdit" class="product-img-list"
+                                    <div class="product-img-list"
                                          ng-repeat="img in product.imageList.split(';') track by $index">
                                         <img ng-src="@{{getImage(img)}}" alt="img">
                                     </div>
-                                    <div ng-if="!product.isEdit" class="product-img-list"
-                                         ng-repeat="img in product.imageFiles track by $index">
-                                        <img ng-src="@{{getImage(img)}}" alt="img">
-                                    </div>
-                                    <div ng-if="product.isEdit"
-                                         ng-repeat="img in product.editProduct.imageList.split(';') track by $index"
-                                         class="product-img-list editable @{{img==product.editProduct.image?'selected':''}}">
-                                        <img ng-src="@{{getImage(img)}}" alt="img"
-                                             ng-click="product.editProduct.image=img">
-                                        <div ng-if="product.isEdit" class="glyphicon glyphicon-remove-circle"
-                                             ng-click="deleteImage(img, product.editProduct)"></div>
-                                    </div>
-                                    <div ng-if="product.isEdit"
-                                         ng-repeat="img in product.editProduct.imageFiles track by $index"
-                                         class="product-img-list editable @{{img.id==product.editProduct.image.id?'selected':''}}">
-                                        <img ng-src="@{{getImage(img)}}" alt="img"
-                                             ng-click="product.editProduct.image=img">
-                                        <div ng-if="product.isEdit" class="glyphicon glyphicon-remove-circle"
-                                             ng-click="deleteImage(img, product.editProduct)"></div>
-                                    </div>
                                 </td>
                                 <td>
-                                    <button ng-if="!product.isEdit" class="btn btn-sm btn-primary"
-                                            ng-click="editProduct(product)"><?php echo trans('label.edit');?></button>
-                                    <button ng-if="!product.isEdit" class="btn btn-sm btn-danger"
-                                            ng-click="deleteProduct(product)"><?php echo trans('label.delete');?></button>
-                                    <button ng-if="product.isEdit" class="btn btn-sm"
-                                            ng-disabled="namesForm_@{{$index}}.$invalid"
-                                            ng-click="saveProduct(product)"><?php echo trans('label.save');?></button>
-                                    <button ng-if="product.isEdit" class="btn btn-sm btn-grey"
-                                            ng-click="product.isEdit=false"><?php echo trans('label.cancel');?></button>
+                                    <button class="btn btn-primary glyphicon glyphicon-pencil"
+                                            ng-click="editProduct(product)">
+                                    </button>
+                                    <button class="btn btn-danger glyphicon glyphicon-remove"
+                                            uib-popover-template="'deleteProductPopover.html'"
+                                            popover-title="<?php echo trans('label.sure_delete');?>"
+                                            popover-placement="bottom" popover-is-open="product.popoverOpened">
+                                    </button>
                                 </td>
                             </tr>
                             </tbody>
-                            <tfoot ng-form="foodForm">
+                            <tfoot>
                             <tr>
-                                <td><input class="form-control" type="text" placeholder="" required
-                                           ng-model="addProduct.product"
-                                           typeahead-on-select="selectProduct($item, addProduct)"
-                                           uib-typeahead="product as product.name for product in products | filter:{name:$viewValue} | limitTo:5">
-                                </td>
-                                <td>
-                                    <select class="form-control" ng-model="addProduct.productUnit" required
-                                            ng-init="addProduct.productUnit=units[0]"
-                                            ng-options="unit as unit.name for unit in units track by unit.id">
-                                    </select>
-                                </td>
-                                <td>
-                                    <div class="input-group">
-                                        <input class="form-control" type="text" placeholder="" required
-                                               ng-model="addProduct.price" aria-describedby="basic-addon1">
-                                            <span class="input-group-addon" id="basic-addon1">
-                                                đ/<span ng-bind="addProduct.productUnit.name"></span>
-                                            </span>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="product-img">
-                                        <img alt="img" ng-src="@{{getMainImage(addProduct)}}">
-                                    </div>
-                                    <div class="product-img input-group">
-                                        <label class="input-group-btn">
-                                                <span class="btn btn-grey btn-sm">
-                                                    <?php echo trans('label.add');?>
-                                                    <input type="file" style="display: none;" accept="image/*" multiple
-                                                           file-list="addProduct.imageFiles" my-file-select
-                                                           limit-file="getLimitImage(addProduct)">
-                                                </span>
-                                        </label>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div ng-repeat="img in addProduct.imageFiles track by $index"
-                                         class="product-img-list editable @{{img.id==addProduct.image.id?'selected':''}}">
-                                        <img ng-src="@{{getImage(img)}}" alt="img"
-                                             ng-click="addProduct.image=img">
-                                        <div class="glyphicon glyphicon-remove-circle"
-                                             ng-click="deleteImage(img, addProduct)"></div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="btn" ng-disabled="foodForm.$invalid" ng-click="addProduct()">
-                                        <?php echo trans('label.add');?>
+                                <td colspan="6">
+                                    <button class="btn" ng-click="addProduct()">
+                                        <i class="glyphicon glyphicon-plus"></i>
+                                        <?php echo trans('label.add_product');?>
                                     </button>
                                 </td>
                             </tr>
@@ -272,7 +182,134 @@ $assets_url = 'resources/assets/';
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
+
+<!-- Product modal -->
+<script type="text/ng-template" id="productModal.html">
+    <form name="productForm" ng-submit="save()">
+        <div class="modal-header">
+            <h3 class="modal-title">
+                <span ng-if="!isEdit"><?php echo trans('label.add_product');?></span>
+                <span ng-if="isEdit"><?php echo trans('label.edit_product');?></span>
+            </h3>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="form-group col-xs-6">
+                    <label for="product_category">
+                        <b><?php echo trans('label.category');?> <span class="text-danger">*</span></b>
+                    </label>
+                    <select class="form-control" id="product_category" name="product_category"
+                            ng-model="product.categoryId" ng-init="product.categoryId=selectedCategoryId"
+                            ng-options="category.id as category.name for category in categories" required></select>
+                    <div class="has-error" ng-show="productForm.product_category.$dirty">
+                    <span class="text-danger" ng-show="productForm.product_category.$error.required">
+                        <?php echo Lang::get('message.required_field', ['field' => trans('label.category')]);?>
+                    </span>
+                    </div>
+                </div>
+                <div class="form-group col-xs-6">
+                    <label for="product_name">
+                        <b><?php echo trans('label.first_name');?> <span class="text-danger">*</span></b>
+                    </label>
+                    <input class="form-control" type="text" placeholder="" required autofocus ng-model="product.name"
+                           typeahead-on-select="selectProduct($item, product)"
+                           uib-typeahead="p as p.name for p in products | filter:{name:$viewValue} | limitTo:5">
+                    <div class="has-error" ng-show="productForm.product_name.$dirty">
+                    <span class="text-danger" ng-show="productForm.product_name.$error.required">
+                        <?php echo Lang::get('message.required_field', ['field' => trans('label.first_name')]);?>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-6">
+                    <label for="product_unit">
+                        <b><?php echo trans('label.unit');?> <span class="text-danger">*</span></b>
+                    </label>
+                    <select class="form-control" id="product_unit" name="product_unit"
+                            ng-model="product.unitId"
+                            ng-options="unit.id as unit.name for unit in units" required></select>
+                    <div class="has-error" ng-show="productForm.product_unit.$dirty">
+                    <span class="text-danger" ng-show="productForm.product_unit.$error.required">
+                        <?php echo Lang::get('message.required_field', ['field' => trans('label.unit')]);?>
+                    </span>
+                    </div>
+                </div>
+                <div class="form-group col-xs-6">
+                    <label for="product_price">
+                        <b><?php echo trans('label.price');?> <span class="text-danger">*</span></b>
+                    </label>
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="" required name="product_price"
+                               ng-model="product.price" aria-describedby="product_price">
+                    <span class="input-group-addon" id="product_price">
+                        đ/<span ng-bind="(units | filter:{id:product.unitId})[0].name"></span>
+                    </span>
+                    </div>
+                    <div class="has-error" ng-show="productForm.product_price.$dirty">
+                    <span class="text-danger" ng-show="productForm.product_price.$error.required">
+                        <?php echo Lang::get('message.required_field', ['field' => trans('label.price')]);?>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="product_description">
+                    <b><?php echo trans('label.description');?></b>
+                </label>
+                <textarea class="form-control" id="product_description" name="product_description" rows="3"
+                          placeholder="" ng-model="product.description"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="product_image">
+                    <b><?php echo trans('label.avatar');?></b>
+                </label>
+                <div class="input-group">
+                    <div class="product-img">
+                        <img alt="img" ng-src="@{{getMainImage(product)}}">
+                    </div>
+                    <div class="product-img input-group">
+                        <label class="input-group-btn">
+                        <span class="btn btn-grey btn-sm">
+                            <?php echo trans('label.add');?>
+                            <input type="file" style="display: none;" accept="image/*" multiple my-file-select
+                                   file-list="product.imageFiles" limit-file="getLimitImage(product)">
+                        </span>
+                        </label>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div ng-repeat="img in product.imageList.split(';') track by $index"
+                         class="product-img-list editable @{{img==product.image?'selected':''}}">
+                        <img ng-src="@{{getImage(img)}}" alt="img" ng-click="product.image=img">
+                        <div class="glyphicon glyphicon-remove-circle" ng-click="deleteImage(img, product)"></div>
+                    </div>
+                    <div ng-repeat="img in product.imageFiles track by $index"
+                         class="product-img-list editable @{{img.id==product.image.id?'selected':''}}">
+                        <img ng-src="@{{getImage(img)}}" alt="img" ng-click="product.image=img">
+                        <div class="glyphicon glyphicon-remove-circle" ng-click="deleteImage(img, product)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button ng-if="!isEdit" class="btn" type="submit"
+                    ng-disabled="productForm.$invalid"><?php echo trans('label.add');?></button>
+            <button ng-if="isEdit" class="btn" type="submit"
+                    ng-disabled="productForm.$invalid"><?php echo trans('label.edit');?></button>
+            <button class="btn btn-grey" type="button" ng-click="cancel()"><?php echo trans('label.close');?></button>
+        </div>
+    </form>
+</script>
+
+<script type="text/ng-template" id="deleteProductPopover.html">
+    <div class="input-group">
+        <button type="button" ng-click="product.popoverOpened=false;deleteProduct(product)"
+                class="btn btn-warning btn-sm"><?php echo trans('label.yes');?></button>
+        <span>&nbsp;</span>
+        <button type="button" ng-click="product.popoverOpened=false"
+                class="btn btn-grey btn-sm"><?php echo trans('label.no');?></button>
+    </div>
+</script>

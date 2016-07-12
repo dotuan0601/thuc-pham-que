@@ -182,6 +182,16 @@
     border-color: #ac2925;
 }
 
+.btn.btn-warning {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.btn.btn-warning:hover {
+    background-color: #d58512;
+    border-color: #985f0d;
+}
+
 .btn.btn-primary {
     background-color: #428bca;
     border-color: #357ebd;
@@ -222,7 +232,7 @@
 }
 
 /*.product-img-list.editable img:hover {*/
-    /*border: solid 2px #7FBA00;*/
+/*border: solid 2px #7FBA00;*/
 /*}*/
 
 .product-img-list.editable.selected img {
@@ -239,4 +249,19 @@
     border-radius: 50%;
     cursor: pointer;
     margin: 0 0 0 -10px;
+}
+
+table .pre {
+    white-space: pre-line;
+    display: block;
+    overflow: hidden;
+    max-height: 100px;
+}
+
+table .popover-content {
+    white-space: pre-line;
+}
+
+.modal-content form {
+    margin: 0;
 }

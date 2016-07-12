@@ -30,7 +30,7 @@ app.controller('DetailController', function ($scope, $routeParams, $location, Ag
 app.controller('InfoController', function ($scope, $routeParams, $location, AgencyService) {
 });
 
-app.controller('ManageController', function ($scope, $routeParams, $location, AgencyService) {
+app.controller('ManageController', function ($scope, $routeParams, $location, $uibModal, AgencyService) {
     // Get agency info
     // AgencyService.getAgencyById($routeParams.id)
     //     .success(function (result) {
@@ -74,33 +74,6 @@ app.controller('ManageController', function ($scope, $routeParams, $location, Ag
         {id: 5, name: "Rau cải", categoryId: 2, unitId: 2, price: 10000}
     ];
 
-    $scope.products = [
-        {
-            id: 1,
-            name: "Thịt lợn",
-            categoryId: 1,
-            unitId: 1,
-            price: 180000,
-            image: "product1.jpg",
-            imageList: "product1.jpg;product1.jpg;product1.jpg"
-        },
-        {
-            id: 2,
-            name: "Thịt bò",
-            categoryId: 1,
-            unitId: 1,
-            price: 250000,
-            image: "product1.jpg",
-            imageList: "product1.jpg;product1.jpg;product1.jpg"
-        },
-        {id: 3, name: "Thịt gà", categoryId: 1, unitId: 1, price: 200000},
-        {id: 4, name: "Rau muống", categoryId: 2, unitId: 2, price: 8000},
-        {id: 5, name: "Rau cải", categoryId: 2, unitId: 2, price: 10000},
-        {id: 6, name: "Rau bí", categoryId: 2, unitId: 2, price: 8000},
-        {id: 7, name: "Rau ngót", categoryId: 2, unitId: 2, price: 10000},
-        {id: 8, name: "Rau mùng tơi", categoryId: 2, unitId: 2, price: 10000},
-        {id: 9, name: "Rau bắp cải", categoryId: 2, unitId: 2, price: 10000}
-    ];
 
     // Change category
     $scope.changeCategory = function (categoryId) {
@@ -129,55 +102,123 @@ app.controller('ManageController', function ($scope, $routeParams, $location, Ag
         }
     };
 
-    // Select product from typeahead
-    $scope.selectProduct = function ($item, product) {
-        product.name = $item.name;
-        product.productUnit = $scope.units.filter(function (unit) {
-            return unit.id == $item.unitId;
-        })[0];
-        product.price = $item.price;
-    };
-
     // Add product
     $scope.addProduct = function () {
-        $scope.agencyProducts.push({
-            name: $scope.addProduct.product.name ? $scope.addProduct.product.name : $scope.addProduct.product,
-            categoryId: $scope.selectedCategoryId,
-            unitId: $scope.addProduct.productUnit.id,
-            price: $scope.addProduct.price,
-            image: $scope.addProduct.image,
-            imageList: $scope.addProduct.imageList,
-            imageFiles: $scope.addProduct.imageFiles
+        var modalInstance = $uibModal.open({
+            animation: true,
+            templateUrl: 'productModal.html',
+            controller: 'ProductModalController',
+            resolve: {
+                product: function () {
+                    return null;
+                },
+                units: function () {
+                    return $scope.units;
+                },
+                categories: function () {
+                    return $scope.categories;
+                },
+                selectedCategoryId: function () {
+                    return $scope.selectedCategoryId;
+                }
+            }
         });
 
-        $scope.addProduct = {};
+        modalInstance.result.then(function (product) {
+            $scope.agencyProducts.push(product);
+            $scope.selectedCategoryId = product.categoryId;
+        });
     };
 
     // Edit product
     $scope.editProduct = function (product) {
-        // Bind product info to input
-        product.editProduct = $.extend(true, {}, product);
+        var modalInstance = $uibModal.open({
+            animation: true,
+            templateUrl: 'productModal.html',
+            controller: 'ProductModalController',
+            resolve: {
+                product: function () {
+                    return $.extend(true, {}, product);
+                },
+                units: function () {
+                    return $scope.units;
+                },
+                categories: function () {
+                    return $scope.categories;
+                },
+                selectedCategoryId: function () {
+                    return $scope.selectedCategoryId;
+                }
+            }
+        });
 
-        // Change to edit mode
-        product.isEdit = true;
-    };
-
-    // Save product
-    $scope.saveProduct = function (product) {
-        product.name = product.editProduct.name;
-        product.unitId = product.editProduct.productUnit.id;
-        product.price = product.editProduct.price;
-        product.image = product.editProduct.image;
-        product.imageList = product.editProduct.imageList;
-        product.imageFiles = product.editProduct.imageFiles;
-
-        // Remove to edit mode
-        product.isEdit = false;
+        modalInstance.result.then(function (editedProduct) {
+            $scope.agencyProducts.splice($scope.agencyProducts.indexOf(product), 1, editedProduct);
+            $scope.selectedCategoryId = editedProduct.categoryId;
+        });
     };
 
     // Edit product
     $scope.deleteProduct = function (product) {
         $scope.agencyProducts.splice($scope.agencyProducts.indexOf(product), 1);
+    };
+
+    // Get product image url
+    $scope.getImage = function (img) {
+        return getImage(img);
+    };
+});
+
+app.controller('ProductModalController', function ($scope, $uibModalInstance, product, units, categories, selectedCategoryId) {
+    $scope.categories = categories;
+    $scope.selectedCategoryId = selectedCategoryId;
+    $scope.units = units;
+    $scope.product = product;
+    $scope.isEdit = product ? true : false;
+
+    // Select product from typeahead
+    $scope.selectProduct = function ($item, product) {
+        product.name = $item.name;
+        product.unitId = $item.unitId;
+        product.price = $item.price;
+        product.description = $item.description;
+        product.image = $item.image;
+        product.imageList = $item.imageList;
+    };
+
+    $scope.save = function () {
+        //$scope.product.name = $scope.product.product ? $scope.product.product.name : $scope.product.name;
+        $uibModalInstance.close($scope.product);
+    };
+
+    $scope.cancel = function () {
+        $uibModalInstance.dismiss('cancel');
+    };
+
+    // Get product image url
+    $scope.getImage = function (img) {
+        return getImage(img);
+    };
+
+    $scope.getMainImage = function (product) {
+        // If no image and has image files
+        if (!product.image && product.imageFiles && product.imageFiles.length)
+            product.image = product.imageFiles[0];
+
+        return $scope.getImage(product.image);
+    };
+
+    // Get limit number of upload image
+    $scope.getLimitImage = function (product) {
+        var limit = 0;
+
+        if (product.imageList)
+            limit += product.imageList.split(';').length;
+
+        if (product.imageFiles)
+            limit += product.imageFiles.length;
+
+        return 6 - limit; // Limit 6 images per product
     };
 
     // Delete image
@@ -205,38 +246,44 @@ app.controller('ManageController', function ($scope, $routeParams, $location, Ag
             product.image = product.imageFiles.length ? product.imageFiles[0] : null;
     };
 
-    // Get product image url
-    $scope.getImage = function (img) {
-        // If no image
-        if (!img) return 'resources/assets/img/no-img.jpg';
-
-        // If image is file
-        if (img.src) return img.src;
-
-        // If not base64 image
-        if (img.indexOf('data:image') == -1) return 'resources/assets/img/' + img;
-
-        return img;
-    };
-
-    $scope.getMainImage = function (product) {
-        // If no image and has image files
-        if (!product.image && product.imageFiles && product.imageFiles.length)
-            product.image = product.imageFiles[0];
-
-        return $scope.getImage(product.image);
-    };
-
-    // Get limit number of upload image
-    $scope.getLimitImage = function (product) {
-        var limit = 0;
-
-        if (product.imageList)
-            limit += product.imageList.split(';').length;
-
-        if (product.imageFiles)
-            limit += product.imageFiles.length;
-
-        return 6 - limit; // Limit 6 images per product
-    };
+    $scope.products = [
+        {
+            id: 1,
+            name: "Thịt lợn",
+            categoryId: 1,
+            unitId: 1,
+            price: 180000,
+            image: "product1.jpg",
+            imageList: "product1.jpg;product2.jpg;product3.jpg"
+        },
+        {
+            id: 2,
+            name: "Thịt bò",
+            categoryId: 1,
+            unitId: 1,
+            price: 250000,
+            image: "product1.jpg",
+            imageList: "product1.jpg;product2.jpg;product3.jpg"
+        },
+        {id: 3, name: "Thịt gà", categoryId: 1, unitId: 1, price: 200000},
+        {id: 4, name: "Rau muống", categoryId: 2, unitId: 2, price: 8000},
+        {id: 5, name: "Rau cải", categoryId: 2, unitId: 2, price: 10000},
+        {id: 6, name: "Rau bí", categoryId: 2, unitId: 2, price: 8000},
+        {id: 7, name: "Rau ngót", categoryId: 2, unitId: 2, price: 10000},
+        {id: 8, name: "Rau mùng tơi", categoryId: 2, unitId: 2, price: 10000},
+        {id: 9, name: "Rau bắp cải", categoryId: 2, unitId: 2, price: 10000}
+    ];
 });
+
+function getImage(img) {
+    // If no image
+    if (!img) return 'resources/assets/img/no-img.jpg';
+
+    // If image is file
+    if (img.src) return img.src;
+
+    // If not base64 image
+    if (img.indexOf('data:image') == -1) return 'resources/assets/img/' + img;
+
+    return img;
+}
