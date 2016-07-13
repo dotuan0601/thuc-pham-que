@@ -1,16 +1,505 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76001a5b-ca2b-4e1f-9fee-28600ccd4893" name="Default" comment="add to git ignore">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/agence/controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/agence/module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/agence/service.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/angular-animate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/angular-route.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/assets/js/angular.min.js" />
+    <list default="true" id="76001a5b-ca2b-4e1f-9fee-28600ccd4893" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/web/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/console/controllers/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/assets.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/css.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/fonts.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/images.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/images/arrow_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/images/arrow_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/images/banner_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/images/banner_bg_bk.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/images/time_line_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/js.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/backend/unit/fixtures/data/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/console/unit/fixtures/data/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/food.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/.bowerrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/New Text Document.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/assets/AppAsset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/config/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/config/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/config/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/config/params.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/controllers/SiteController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/models/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/runtime/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/views/layouts/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/views/site/error.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/views/site/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/views/site/login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/web/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/web/assets/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/web/css/site.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/backend/web/robots.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/camera.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/config/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/config/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/config/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/config/params.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/mail/layouts/html.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/mail/layouts/text.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/mail/passwordResetToken-html.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/mail/passwordResetToken-text.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/models/Contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/models/LoginForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/models/News.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/models/Products.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/models/Slideshow.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/models/User.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/console/config/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/console/config/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/console/config/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/console/config/params.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/console/migrations/m130524_201442_init.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/console/models/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/console/runtime/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/dev/backend/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/dev/backend/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/dev/backend/web/index-test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/dev/backend/web/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/dev/common/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/dev/common/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/dev/console/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/dev/console/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/dev/frontend/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/dev/frontend/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/dev/frontend/web/index-test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/dev/frontend/web/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/dev/yii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/prod/backend/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/prod/backend/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/prod/backend/web/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/prod/common/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/prod/common/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/prod/console/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/prod/console/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/prod/frontend/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/prod/frontend/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/prod/frontend/web/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/environments/prod/yii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/assets/AppAsset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/config/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/config/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/config/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/config/params.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/controllers/SiteController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/models/ContactForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/models/PasswordResetRequestForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/models/ResetPasswordForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/models/SignupForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/runtime/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/views/layouts/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/views/site/about.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/views/site/contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/views/site/error.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/views/site/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/views/site/login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/views/site/requestPasswordResetToken.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/views/site/resetPassword.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/views/site/signup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/assets/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/css/site.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/js/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/js/jquery.singlePageNav.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/js/unslider.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/web/robots.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/widgets/Alert.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/init" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/init.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/requirements.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/_output/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/backend/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/backend/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/backend/_output/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/backend/acceptance.suite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/backend/acceptance/LoginCept.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/backend/acceptance/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/backend/codeception.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/backend/functional.suite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/backend/functional/LoginCept.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/backend/functional/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/backend/unit.suite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/backend/unit/DbTestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/backend/unit/TestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/backend/unit/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/bin/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/bin/yii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/bin/yii.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/common/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/common/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/common/_output/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/common/_pages/LoginPage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/common/_support/FixtureHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/common/codeception.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/common/fixtures/UserFixture.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/common/fixtures/data/init_login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/common/templates/fixtures/user.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/common/unit.suite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/common/unit/DbTestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/common/unit/TestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/common/unit/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/common/unit/fixtures/data/models/user.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/common/unit/models/LoginFormTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/config/acceptance.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/config/backend/acceptance.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/config/backend/config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/config/backend/functional.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/config/backend/unit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/config/common/unit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/config/config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/config/console/unit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/config/frontend/acceptance.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/config/frontend/config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/config/frontend/functional.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/config/frontend/unit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/config/functional.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/config/unit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/console/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/console/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/console/_output/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/console/codeception.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/console/unit.suite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/console/unit/DbTestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/console/unit/TestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/console/unit/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/_output/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/_pages/AboutPage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/_pages/ContactPage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/_pages/SignupPage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/acceptance.suite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/acceptance/AboutCept.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/acceptance/ContactCept.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/acceptance/HomeCept.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/acceptance/LoginCept.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/acceptance/SignupCest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/acceptance/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/codeception.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/functional.suite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/functional/AboutCept.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/functional/ContactCept.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/functional/HomeCept.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/functional/LoginCept.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/functional/SignupCest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/functional/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/unit.suite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/unit/DbTestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/unit/TestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/unit/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/unit/fixtures/data/models/user.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/unit/models/ContactFormTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/unit/models/PasswordResetRequestFormTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/unit/models/ResetPasswordFormTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/codeception/frontend/unit/models/SignupFormTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/yii.bat" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/.env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/.idea/blade.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/.idea/laravel_demo.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Agency.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Comments.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Console/Commands/Inspire.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Console/Kernel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Customer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Events/Event.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Exceptions/Handler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/AgencyController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/Auth/AuthController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/Auth/PasswordController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/CommentController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/Controller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/HomeController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/PostController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Http/Kernel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Http/Middleware/Authenticate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Http/Middleware/EncryptCookies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Http/Middleware/VerifyCsrfToken.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Http/Requests/PostFormRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Http/Requests/Request.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Http/routes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Jobs/Job.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Listeners/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Policies/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Posts.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Providers/AppServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Providers/AuthServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Providers/EventServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/Providers/RouteServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/User.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/artisan" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bootstrap/app.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bootstrap/autoload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bootstrap/cache/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/app.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/auth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/broadcasting.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/compile.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/database.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/filesystems.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/mail.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/queue.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/services.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/session.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/view.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/database/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/database/factories/ModelFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/database/migrations/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/database/migrations/2016_06_15_093140_posts.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/database/migrations/2016_06_15_093237_comments.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/database/migrations/2016_06_20_035507_create_agency_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/database/migrations/2016_06_20_041652_create_customer_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/database/seeds/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/database/seeds/DatabaseSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/phpunit.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/public/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/public/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/public/web.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/css/app.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/css/coming-soon-social.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/css/icomoon-social.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/css/leaflet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/css/leaflet.ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/css/main-custom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/css/main-green.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/css/main-grey.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/css/main-orange.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/css/main-red.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/img/page-background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/img/product1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/img/user.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/img/user2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/agency/controller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/agency/module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/agency/service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/angular-animate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/angular-route.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/helpers/upload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/home/controller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/home/module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/home/service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/jquery.bxslider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/jquery.fitvids.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/jquery.sequence-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/jquery.sequence.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/leaflet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/main-menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/modernizr-2.6.2-respond-1.1.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/order/controller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/order/module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/order/service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/product/controller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/product/module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/product/service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets/js/template.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/css/app.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/css/owl.carousel.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/css/productviewgallery.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/css/slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/fonts/Amble-Regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/fonts/BebasNeue-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/0001-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/0001-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/0001-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/0001-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/0001-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/AjaxLoader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/arrow-next.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/arrow-prev.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/art.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/c-arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/c1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/c2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/c3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/cart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/delivery.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/det_pic.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/det_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/det_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/det_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/down_arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/gpluse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/icon1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/icon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/icon3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/icon4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/icon5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/icon6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/large/0001-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/large/0001-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/large/0001-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/large/0001-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/large/0001-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/large/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/nav_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/pic4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/pic5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/pic6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/rss.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/sale_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/sale_pic10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/sale_pic11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/sale_pic12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/sale_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/sale_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/sale_pic4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/sale_pic5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/sale_pic6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/sale_pic7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/sale_pic8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/sale_pic9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/search_h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/shoe_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/shoe_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/shoe_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/shoe_pic4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/shoe_pic5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/shoe_pic6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/slider1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/slider2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/slider3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/slider4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/slider5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/slider_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/small/0001-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/small/0001-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/small/0001-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/small/0001-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/small/0001-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/small/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/top_move.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/up_arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/w_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/w_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/w_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/w_pic4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/w_pic5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/images/w_pic6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/agence/controller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/agence/module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/agence/service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/angular-animate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/angular-route.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/cloud-zoom.1.0.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/easing.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/fliplightbox.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/jquery.cslider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/jquery.easing.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/jquery.fancybox-buttons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/jquery.fancybox-thumbs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/jquery.fancybox.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/jquery.mixitup.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/modernizr.custom.28468.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/move-top.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/owl.carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/productviewgallery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/js/responsive.menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/assets1/sass/app.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/lang/en/auth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/lang/en/pagination.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/lang/en/passwords.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/lang/en/validation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/lang/vn/label.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/about.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/agency/detail.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/agency/index.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/agency/info.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/agency/list.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/agency/manage.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/app.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/errors/503.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/home.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/home/index.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/home/search.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/includes/footer.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/includes/head.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/includes/menu.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/layouts/layout.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/master.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/order/index.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/order/list.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/product/index.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/product/list.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/user/dangky.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/user/sample_angular.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/vendor/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/views/welcome.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/server.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/app/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/app/public/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/cache/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/views/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/logs/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ExampleTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/TestCase.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/routes.php" afterPath="$PROJECT_DIR$/src/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/.gitignore" afterPath="$PROJECT_DIR$/src/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/.htaccess" afterPath="$PROJECT_DIR$/src/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/.idea/modules.xml" afterPath="$PROJECT_DIR$/src/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/composer.json" afterPath="$PROJECT_DIR$/src/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/composer.lock" afterPath="$PROJECT_DIR$/src/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.php" afterPath="$PROJECT_DIR$/src/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/readme.md" afterPath="$PROJECT_DIR$/src/readme.md" />
     </list>
     <list id="2e2182f2-5c90-46c8-aaf8-8de5663f0155" name="Failed commit: Default" comment="add to git ignore" />
     <ignored path="thuc-pham-que.iws" />
@@ -32,7 +521,28 @@
     <favorites_list name="thuc-pham-que" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="params-local.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/config/params-local.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="food.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sql/food.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
@@ -59,8 +569,14 @@
         <option value="$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/src/database/migrations/2016_06_20_035507_create_agency_table.php" />
         <option value="$PROJECT_DIR$/src/app/Agency.php" />
-        <option value="$PROJECT_DIR$/src/.gitignore" />
         <option value="$PROJECT_DIR$/src/app/Http/Controllers/AgencyController.php" />
+        <option value="$PROJECT_DIR$/src/.gitignore" />
+        <option value="$PROJECT_DIR$/src/resources/views/home/search.blade.php" />
+        <option value="$PROJECT_DIR$/src/resources/views/home/home.blade.php" />
+        <option value="$PROJECT_DIR$/src/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/src/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/src/resources/assets/js/home/module.js" />
+        <option value="$PROJECT_DIR$/src/resources/views/home/index.blade.php" />
         <option value="$PROJECT_DIR$/src/app/Http/routes.php" />
       </list>
     </option>
@@ -76,9 +592,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="333" />
-    <option name="width" value="1040" />
-    <option name="height" value="735" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -87,7 +604,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -105,7 +622,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -152,7 +668,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -166,156 +682,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thuc-pham-que" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thuc-pham-que" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thuc-pham-que" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thuc-pham-que" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agence" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thuc-pham-que" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thuc-pham-que" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thuc-pham-que" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thuc-pham-que" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thuc-pham-que" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thuc-pham-que" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thuc-pham-que" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thuc-pham-que" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
+              <option name="myItemId" value="sql" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -325,10 +698,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\thuc-pham-que\src\resources\assets\css" />
-      <recent name="D:\xampp\htdocs\thuc-pham-que\src\resources\assets\js\agence" />
-      <recent name="D:\xampp\htdocs\thuc-pham-que\src\resources\assets\js" />
-      <recent name="D:\xampp\htdocs\thuc-pham-que\src\resources\views\agence" />
+      <recent name="C:\xampp\htdocs\thuc-pham-que\sql" />
+      <recent name="C:\xampp\htdocs\thuc-pham-que\src\resources\assets\img" />
       <recent name="E:\thuc-pham-que\template" />
     </key>
   </component>
@@ -389,7 +760,9 @@
       <workItem from="1467070784638" duration="4965000" />
       <workItem from="1467097105656" duration="4452000" />
       <workItem from="1467101627949" duration="3156000" />
-      <workItem from="1467218943504" duration="866000" />
+      <workItem from="1467623215100" duration="5528000" />
+      <workItem from="1467685005204" duration="529000" />
+      <workItem from="1468404555334" duration="214000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1465878269107</created>
@@ -430,13 +803,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24424000" />
+    <option name="totallyTimeSpent" value="30473000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="333" y="0" width="1040" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23571429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17708333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -445,6 +818,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -482,365 +856,92 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/AgencyController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#55#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php" />
+    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php" />
+    <entry file="file://$PROJECT_DIR$/src/.env" />
     <entry file="file://$PROJECT_DIR$/src/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php" />
+    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php" />
+    <entry file="file://$PROJECT_DIR$/src/.env" />
     <entry file="file://$PROJECT_DIR$/src/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php" />
+    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php" />
+    <entry file="file://$PROJECT_DIR$/src/.env" />
     <entry file="file://$PROJECT_DIR$/src/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/Auth/AuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php" />
+    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php" />
+    <entry file="file://$PROJECT_DIR$/src/.env" />
+    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php" />
+    <entry file="file://$PROJECT_DIR$/src/.env" />
+    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php" />
+    <entry file="file://$PROJECT_DIR$/src/.env" />
+    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php" />
+    <entry file="file://$PROJECT_DIR$/src/.env" />
+    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php" />
+    <entry file="file://$PROJECT_DIR$/src/resources/views/welcome.blade.php" />
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/Auth/AuthController.php" />
     <entry file="file://$PROJECT_DIR$/src/vendor/symfony/http-foundation/Response.php" />
     <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Http/Response.php" />
     <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Auth/Access/Response.php" />
     <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Support/Facades/Response.php" />
-    <entry file="file://$PROJECT_DIR$/src/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Comments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/migrations/2016_06_20_035507_create_agency_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Agency.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/.env" />
+    <entry file="file://$PROJECT_DIR$/src/app/Customer.php" />
+    <entry file="file://$PROJECT_DIR$/src/app/Comments.php" />
+    <entry file="file://$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php" />
+    <entry file="file://$PROJECT_DIR$/src/database/migrations/2016_06_20_035507_create_agency_table.php" />
+    <entry file="file://$PROJECT_DIR$/src/app/Agency.php" />
     <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" />
     <entry file="file://$PROJECT_DIR$/src/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/AgencyController.php" />
+    <entry file="file://$PROJECT_DIR$/src/resources/assets/js/agency/controller.js" />
+    <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php" />
+    <entry file="file://$PROJECT_DIR$/src/resources/assets/js/home/controller.js" />
+    <entry file="file://$PROJECT_DIR$/src/resources/assets/js/home/service.js" />
+    <entry file="file://$PROJECT_DIR$/src/resources/views/home/home.blade.php" />
+    <entry file="file://$PROJECT_DIR$/src/resources/assets/js/agency/module.js" />
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/HomeController.php" />
+    <entry file="file://$PROJECT_DIR$/src/resources/assets/js/home/module.js" />
+    <entry file="file://$PROJECT_DIR$/src/resources/views/home/index.blade.php" />
+    <entry file="file://$PROJECT_DIR$/src/app/Http/routes.php" />
+    <entry file="file://$PROJECT_DIR$/src/resources/views/home/search.blade.php" />
+    <entry file="file://$PROJECT_DIR$/src/resources/views/home.blade.php" />
+    <entry file="file://$PROJECT_DIR$/src/common/config/params-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/AgencyController.php">
+    <entry file="file://$PROJECT_DIR$/sql/food.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#55#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/agence/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/assets/js/angular.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/assets/js/agence/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/assets/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/assets/js/agence/module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
