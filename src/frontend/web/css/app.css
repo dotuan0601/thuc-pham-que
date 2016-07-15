@@ -1,0 +1,334 @@
+.agency {
+    color: #FAFAFA;
+    text-transform: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    padding: 15px 0;
+}
+
+.agency .avatar, .user .comment-author, .agency .info, .user .info {
+    float: left;
+}
+
+.agency .avatar {
+    margin-right: 20px;
+}
+
+.agency .info, .user .info, .agency .rating, .user .rating {
+    margin-top: 15px;
+}
+
+.agency .info h1 {
+    margin-bottom: 10px;
+}
+
+.agency .contacts {
+    margin-top: 5px;
+}
+
+.agency .rating, .user .rating {
+    float: right;
+}
+
+.agency .rating {
+    font-size: 18px;
+    height: 85px;
+}
+
+.agency .rating div:first-child {
+    float: left;
+    margin-right: 10px;
+}
+
+.agency .avatar img {
+    height: 100px;
+    margin: auto;
+    border: 5px solid #FFF;
+    -webkit-border-radius: 100px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 100px;
+    -moz-background-clip: padding;
+    border-radius: 100px;
+    background-clip: padding-box;
+    -webkit-box-shadow: inset 0 1px #fff, 0 1px 2px #c8cfe6;
+    -moz-box-shadow: inset 0 1px #fff, 0 1px 2px #c8cfe6;
+    box-shadow: inset 0 1px #fff, 0 1px 2px #c8cfe6;
+}
+
+.user table {
+    width: 100%
+}
+
+.user table th {
+    width: 100%;
+    border-bottom: 1px solid #E7E7E7;
+    padding-bottom: 10px;
+}
+
+.user table td {
+    background: url(../img/page-background.png);
+}
+
+.user.order table td {
+    background: none;
+}
+
+.user .comment-author {
+    margin: 0;
+}
+
+.user .shop-item .title {
+    font-size: medium;
+}
+
+.user .shop-item .price {
+    color: #535b60;
+    font-size: 1.5em;
+    text-align: center;
+    width: auto;
+}
+
+.user .shop-item .actions {
+    width: auto;
+}
+
+.user .shop-item .btn {
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.user .rating .datetime {
+    font-size: small;
+}
+
+.user .rating .code {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.text-default .text-primary, .text-success, .text-danger, .text-info, .text-warning {
+    margin-right: 10px;
+}
+
+.text-default {
+    color: #777;
+}
+
+.text-primary {
+    color: #337ab7;
+}
+
+.text-success {
+    color: #5cb85c;
+}
+
+.text-info {
+    color: #5bc0de;
+}
+
+.text-warning {
+    color: #f0ad4e;
+}
+
+.text-danger {
+    color: #d9534f;
+}
+
+.custom-menu {
+    margin-bottom: 10px;
+}
+
+.custom-menu a {
+    color: #535b60;
+}
+
+.custom-menu .active a {
+    color: #439f55 !important;
+    font-weight: 600;
+    background-color: transparent !important;
+}
+
+.custom-menu .active .badge {
+    color: #fff !important;
+    background-color: #439f55 !important;
+}
+
+.custom-menu li a:hover {
+    color: #439f55;
+    background-color: transparent;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.btn.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn.btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.btn.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.btn.btn-info:hover {
+    color: #fff;
+    background-color: #39b3d7;
+    border-color: #269abc;
+}
+
+.btn.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.btn.btn-danger:hover {
+    color: #fff;
+    background-color: #d2322d;
+    border-color: #ac2925;
+}
+
+.btn.btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.btn.btn-warning:hover {
+    color: #fff;
+    background-color: #d58512;
+    border-color: #985f0d;
+}
+
+.btn.btn-primary {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+
+.btn.btn-primary:hover {
+    color: #fff;
+    background-color: #3276b1;
+    border-color: #285e8e;
+}
+
+.btn.btn-link {
+    font-weight: 400;
+    color: #337ab7;
+    border-radius: 0;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-link:hover, .btn-link:focus {
+    color: #23527c;
+}
+
+.img-select {
+    margin-left: 10px;
+}
+
+.form-group img {
+    height: 100px;
+}
+
+.product-img, .product-img.input-group label, .product-img-list {
+    float: left;
+}
+
+.product-img img {
+    height: 80px;
+    margin: 3px;
+}
+
+.product-img.input-group {
+    padding: 3px;
+}
+
+.product-img-list {
+    padding: 5px 3px;
+}
+
+.product-img-list img {
+    height: 30px;
+}
+
+.product-img-list.editable.selected img {
+    outline: solid 3px #57AD11;
+}
+
+.product-img-list .glyphicon-remove-circle {
+    width: 15px;
+    height: 15px;
+    top: -10px;
+    right: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 0 0 -10px;
+}
+
+table .pre {
+    white-space: pre-line;
+    display: block;
+    overflow: hidden;
+    max-height: 100px;
+}
+
+table .popover-content {
+    white-space: pre-line;
+}
+
+.modal-content form {
+    margin: 0;
+}
+
+.datetime-picker-dropdown > li.date-picker-menu div > table .btn-default {
+    border: 0;
+    text-shadow: none;
+}
+
+.input-group-btn .btn i {
+    line-height: 1.42857143;
+}
+
+.uib-timepicker .uib-time input {
+    width: 50px;
+}
+
+.datetime-picker-dropdown .text-info {
+    margin-right: 0;
+}
+
+.datetime-picker-dropdown .btn-info .text-info {
+    color: #fff;
+}
+
+.btn .glyphicon-calendar {
+    text-shadow: none;
+}
+
+.input-group.my-checkbox button {
+    width: 20px;
+    height: 26px;
+}
+
+.input-group.my-checkbox button i {
+    left: -7px;
+    top: -1px;
+    width: 5px;
+}
+
+.input-group img, .custom-table img {
+    border: solid 1px #ddd;
+}
