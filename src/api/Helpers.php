@@ -9,10 +9,7 @@ namespace api;
  */
 
 class Helpers {
-    public static function jsonResponse($code, $data) {
-        echo json_encode(array(
-            'code' => $code,
-            'data' => $data
-        ));
+    public static function jsonResponse($data) {
+        echo json_encode($data);
     }
 }

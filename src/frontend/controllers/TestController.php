@@ -29,7 +29,6 @@ class TestController extends Controller
 
     public function actionIndex()
     {
-        echo 'test front-end'; die;
         return $this->render('index');
     }
 }

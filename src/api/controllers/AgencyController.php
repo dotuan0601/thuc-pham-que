@@ -1,6 +1,7 @@
 <?php
 namespace api\controllers;
 
+use common\models\Agency;
 use Yii;
 use yii\web\Controller;
 use api\Helpers;
@@ -10,6 +11,7 @@ use api\Helpers;
  */
 class AgencyController extends Controller
 {
+    protected $limit = 10;
 
     /**
      * @inheritdoc
@@ -27,8 +29,38 @@ class AgencyController extends Controller
         ];
     }
 
+    /**
+     * api find agencys by id
+     *
+     * @param $id
+     */
     public function actionGet($id)
     {
-        Helpers::jsonResponse(200, 'agency id: ' . $id);
+        $agenncy = Agency::findOne(array('id' => $id));
+
+        Helpers::jsonResponse($agenncy->toArray());
+    }
+
+
+    /**
+     * api get list agency
+     *
+     * @param int $page
+     */
+    public function actionList($page = 0) {
+        // get list agency
+        $offset = $page*$this->limit;
+        $list_agency_raw = Agency::find()
+            ->where(['is_actived' => Agency::ACTIVE_STATUS])
+            ->orderBy('id DESC')
+            ->limit($this->limit, $offset)
+            ->all();
+
+        $list_agency = array();
+        foreach ($list_agency_raw as $agency) {
+            $list_agency[] = $agency->toArray();
+        }
+
+        Helpers::jsonResponse($list_agency);
     }
 }
