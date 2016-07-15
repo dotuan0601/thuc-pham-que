@@ -51,7 +51,7 @@ class AgencyController extends Controller
         // get list agency
         $offset = $page*$this->limit;
         $list_agency_raw = Agency::find()
-            ->where(['is_actived' => Agency::ACTIVE_STATUS])
+            //->where(['is_actived' => Agency::ACTIVE_STATUS])
             ->orderBy('id DESC')
             ->limit($this->limit, $offset)
             ->all();

@@ -38,7 +38,7 @@ AppAsset::register($this);
             </div>
             <nav id="mainmenu" class="mainmenu">
                 <ul>
-                    <li class="logo-wrapper"><a href="index.html"><img src="img/mPurpose-logo.png"
+                    <li class="logo-wrapper"><a href="index.html"><img src="../images/mPurpose-logo.png"
                                                                        alt="Thực phẩm quê"></a>
                     </li>
                     <li>
@@ -152,7 +152,7 @@ AppAsset::register($this);
                 <h3>Our Latest Work</h3>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <a href="page-portfolio-item.html"><img src="img/portfolio6.jpg" alt="Project Name"></a>
+                        <a href="page-portfolio-item.html"><img src="../images/portfolio6.jpg" alt="Project Name"></a>
                     </div>
                 </div>
             </div>

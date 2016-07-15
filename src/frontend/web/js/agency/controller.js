@@ -1,5 +1,10 @@
 app.controller('ListController', function ($scope, AgencyService) {
-    $scope.agencies = AgencyService.agencies;
+    AgencyService.getAgencies()
+        .then(function (result) {
+            $scope.agencies = result.data;
+        }, function (error) {
+
+        });
 
     $scope.remove = function (agency) {
         $scope.agencies.splice($scope.agencies.indexOf(agency), 1);
@@ -9,19 +14,20 @@ app.controller('ListController', function ($scope, AgencyService) {
 app.controller('DetailController', function ($scope, $routeParams, $location, AgencyService) {
     if ($routeParams.id) {
         $scope.title = "Edit";
-        if (AgencyService.agencies) {
-            $scope.agency = AgencyService.agencies.filter(function (agency) {
-                return agency.id == $routeParams.id;
-            })[0];
-        }
+        AgencyService.getAgency($routeParams.id)
+            .then(function (result) {
+                $scope.agency = result.data;
+            }, function (error) {
+
+            });
     } else {
         $scope.title = "Add";
     }
 
     $scope.save = function () {
         if (!$routeParams.id) {
-            $scope.agency.id = AgencyService.index++;
-            AgencyService.agencies.push($scope.agency);
+            // $scope.agency.id = AgencyService.index++;
+            // AgencyService.agencies.push($scope.agency);
         }
         $location.path("list");
     };
@@ -63,7 +69,7 @@ app.controller('ManageController', function ($scope, $routeParams, $location, $u
     $scope.agencyProducts = [
         {
             id: 1, name: "Thịt lợn", categoryId: 1, unitId: 1, price: 180000, image: "product1.jpg",
-            imageList: "product1.jpg;product2.jpg;product2.jpg"
+            imageList: "product1.jpg;product2.jpg;product3.jpg"
         },
         {
             id: 2, name: "Thịt bò", categoryId: 1, unitId: 1, price: 250000, image: "product1.jpg",
@@ -85,8 +91,8 @@ app.controller('ManageController', function ($scope, $routeParams, $location, $u
         if ($scope.agency.avatarList && $scope.agency.avatarList.length)
             return $scope.agency.avatarList[$scope.agency.avatarList.length - 1].src;
         if ($scope.agency && $scope.agency.avatar)
-            return 'resources/assets/img/' + $scope.agency.avatar;
-        return 'resources/assets/img/user.png';
+            return '../images/' + $scope.agency.avatar;
+        return '../images/user.png';
     };
 
     // Click button save common info
@@ -332,13 +338,13 @@ app.controller('ProductModalController', function ($scope, $uibModalInstance, pr
 
 function getImage(img) {
     // If no image
-    if (!img) return 'resources/assets/img/no-img.jpg';
+    if (!img) return '../images/no-img.jpg';
 
     // If image is file
     if (img.src) return img.src;
 
     // If not base64 image
-    if (img.indexOf('data:image') == -1) return 'resources/assets/img/' + img;
+    if (img.indexOf('data:image') == -1) return '../images/' + img;
 
     return img;
 }

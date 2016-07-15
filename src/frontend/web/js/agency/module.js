@@ -11,6 +11,12 @@ app.config(function ($routeProvider) {
         })
 
         // route for the add page
+        .when('/detail', {
+            templateUrl: 'agency/detail',
+            controller: 'DetailController'
+        })
+
+        // route for the add page
         .when('/detail/:id', {
             templateUrl: 'agency/detail',
             controller: 'DetailController'
