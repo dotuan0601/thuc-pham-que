@@ -45,7 +45,7 @@
                                        ng-model="agency.name" autofocus required>
                                 <div class="has-error" ng-show="infoForm.agency_name.$dirty">
                                 <span class="text-danger" ng-show="infoForm.agency_name.$error.required">
-<!--                                    --><? //= Yii::t('message', 'required_field', ['field' => Yii::t('app', 'agency_name')]); ?>
+                                    <?= Yii::t('message', 'required_field', ['field' => Yii::t('app', 'agency_name')]); ?>
                                 </span>
                                 </div>
                             </div>
@@ -59,10 +59,10 @@
                                        ng-pattern="/^(\+84)?[(]{0,1}[0-9]{2,4}[)\.\- ]{0,1}[0-9]{3}[\.\- ]{0,1}[0-9]{4}$/">
                                 <div ng-show="infoForm.agency_phone.$dirty">
                                     <div class="text-danger" ng-show="infoForm.agency_phone.$error.required">
-                                        <!--                                        --><? //= Yii::t('message', 'required_field', ['field' => Yii::t('app', 'phone')]); ?>
+                                        <?= Yii::t('message', 'required_field', ['field' => Yii::t('app', 'phone')]); ?>
                                     </div>
                                     <div class="text-danger" ng-show="infoForm.agency_phone.$error.pattern">
-                                        <!--                                        --><? //= Yii::t('message', 'invalid_field', ['field' => Yii::t('app', 'phone')]); ?>
+                                        <?= Yii::t('message', 'invalid_field', ['field' => Yii::t('app', 'phone')]); ?>
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@
                                        placeholder="" ng-model="agency.email">
                                 <div class="has-error" ng-show="infoForm.agency_email.$dirty">
                                 <span class="text-danger" ng-show="infoForm.agency_email.$error.email">
-<!--                                    --><? //= Yii::t('message', 'invalid_field', ['field' => Yii::t('app', 'email')]); ?>
+                                    <?= Yii::t('message', 'invalid_field', ['field' => Yii::t('app', 'email')]); ?>
                                 </span>
                                 </div>
                             </div>
@@ -308,7 +308,7 @@
                             ng-options="category.id as category.name for category in categories" required></select>
                     <div class="has-error" ng-show="productForm.product_category.$dirty">
                     <span class="text-danger" ng-show="productForm.product_category.$error.required">
-<!--                        --><? //= Yii::t('message', 'required_field', ['field' => Yii::t('app', 'category')]); ?>
+                        <?= Yii::t('message', 'required_field', ['field' => Yii::t('app', 'category')]); ?>
                     </span>
                     </div>
                 </div>
@@ -321,7 +321,7 @@
                            uib-typeahead="p as p.name for p in products | filter:{name:$viewValue} | limitTo:5">
                     <div class="has-error" ng-show="productForm.product_name.$dirty">
                     <span class="text-danger" ng-show="productForm.product_name.$error.required">
-<!--                        --><? //= Yii::t('message', 'required_field', ['field' => Yii::t('app', 'first_name')]); ?>
+                        <?= Yii::t('message', 'required_field', ['field' => Yii::t('app', 'first_name')]); ?>
                     </span>
                     </div>
                 </div>
@@ -336,7 +336,7 @@
                             ng-options="unit.id as unit.name for unit in units" required></select>
                     <div class="has-error" ng-show="productForm.product_unit.$dirty">
                     <span class="text-danger" ng-show="productForm.product_unit.$error.required">
-<!--                        --><? //= Yii::t('message', 'required_field', ['field' => Yii::t('app', 'unit')]); ?>
+                        <?= Yii::t('message', 'required_field', ['field' => Yii::t('app', 'unit')]); ?>
                     </span>
                     </div>
                 </div>
@@ -353,7 +353,7 @@
                     </div>
                     <div class="has-error" ng-show="productForm.product_price.$dirty">
                     <span class="text-danger" ng-show="productForm.product_price.$error.required">
-<!--                        --><? //= Yii::t('message', 'required_field', ['field' => Yii::t('app', 'price')]); ?>
+                        <?= Yii::t('message', 'required_field', ['field' => Yii::t('app', 'price')]); ?>
                     </span>
                     </div>
                 </div>

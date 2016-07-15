@@ -298,9 +298,9 @@ table .popover-content {
     text-shadow: none;
 }
 
-.input-group-btn .btn i {
-    line-height: 1.42857143;
-}
+/*.input-group-btn .btn i {*/
+    /*line-height: 1.42857143;*/
+/*}*/
 
 .uib-timepicker .uib-time input {
     width: 50px;
