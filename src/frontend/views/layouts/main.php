@@ -32,7 +32,8 @@ AppAsset::register($this);
                     <ul>
                         <li class="shopping-cart-items"><i class="glyphicon glyphicon-shopping-cart icon-white"></i> <a
                                 href="page-shopping-cart.html"><b>3 items</b></a></li>
-                        <li><a href="page-login.html">Login</a></li>
+                        <li><a href="index.php/user#/login">Đăng nhập</a></li>
+                        <li><a href="page-login.html">Đăng ký</a></li>
                     </ul>
                 </div>
             </div>
@@ -149,7 +150,7 @@ AppAsset::register($this);
     <div class="container">
         <div class="row">
             <div class="col-footer col-md-3 col-xs-6">
-                <h3>Our Latest Work</h3>
+                <h3>Clip về chúng tôi</h3>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
                         <a href="page-portfolio-item.html"><img src="../images/portfolio6.jpg" alt="Project Name"></a>
@@ -157,7 +158,7 @@ AppAsset::register($this);
                 </div>
             </div>
             <div class="col-footer col-md-3 col-xs-6">
-                <h3>Navigate</h3>
+                <h3>Các mục chính</h3>
                 <ul class="no-list-style footer-navigate-section">
                     <li><a href="page-blog-posts.html">Blog</a></li>
                     <li><a href="page-portfolio-3-columns-2.html">Portfolio</a></li>
@@ -169,17 +170,17 @@ AppAsset::register($this);
             </div>
 
             <div class="col-footer col-md-4 col-xs-6">
-                <h3>Contacts</h3>
+                <h3>Liên hệ</h3>
                 <p class="contact-us-details">
-                    <b>Address:</b> 123 Fake Street, LN1 2ST, London, United Kingdom<br/>
-                    <b>Phone:</b> +44 123 654321<br/>
-                    <b>Fax:</b> +44 123 654321<br/>
+                    <b>Địa chỉ:</b> Hội cầu KTXNN<br/>
+                    <b>Phone:</b> 0999999<br/>
+                    <b>Fax:</b> chưa mua máy fax :3<br/>
                     <b>Email:</b> <a
-                        href="mailto:getintoutch@yourcompanydomain.com">getintoutch@yourcompanydomain.com</a>
+                        href="mailto:getintoutch@yourcompanydomain.com">xxxx@yourcompanydomain.com</a>
                 </p>
             </div>
             <div class="col-footer col-md-2 col-xs-6">
-                <h3>Stay Connected</h3>
+                <h3>Mạng xã hội</h3>
                 <ul class="footer-stay-connected no-list-style">
                     <li><a href="#" class="facebook"></a></li>
                     <li><a href="#" class="twitter"></a></li>

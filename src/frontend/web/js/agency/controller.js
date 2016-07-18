@@ -38,26 +38,33 @@ app.controller('InfoController', function ($scope, $routeParams, $location, Agen
 
 app.controller('ManageController', function ($scope, $routeParams, $location, $uibModal, AgencyService) {
     // Get agency info
-    // AgencyService.getAgencyById($routeParams.id)
-    //     .success(function (result) {
-    //         $scope.agency = result;
-    //     })
-    //     .error(function (error) {
-    //     });
+    AgencyService.getAgency($routeParams.id)
+        .success(function (result) {
+            $scope.agency = result;
+        })
+        .error(function (error) {
+        });
 
-    $scope.agency = {
-        id: 1,
-        name: "Đại lý 1",
-        address: "Số 1 Phạm Văn Đồng",
-        phone: "01234567890",
-        email: "daily1@gmail.com",
-        avatar: null//"user2.jpg"
-    };
+    AgencyService.getUnits()
+        .success(function (result) {
+            $scope.units = result;
+        })
+        .error(function (error) {
+        });
 
-    $scope.units = [
-        {id: 1, name: "kg"},
-        {id: 2, name: "bó"}
-    ];
+    // $scope.agency = {
+    //     id: 1,
+    //     name: "Đại lý 1",
+    //     address: "Số 1 Phạm Văn Đồng",
+    //     phone: "01234567890",
+    //     email: "daily1@gmail.com",
+    //     avatar: null//"user2.jpg"
+    // };
+
+    // $scope.units = [
+    //     {id: 1, name: "kg"},
+    //     {id: 2, name: "bó"}
+    // ];
 
     $scope.categories = [
         {id: 1, name: "Thịt,cá"},
