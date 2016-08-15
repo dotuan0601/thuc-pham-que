@@ -1,8 +1,6 @@
 <!-- Page Title -->
 
 <div class="section">
-    <div class="container" ng-app="UserModule">
-        <div ng-view>
             <div class="row page-content">
                 <div class="row control-group">
                     <div class="col-md-3">
@@ -29,12 +27,4 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 </div>
-
-<?php
-    $this->registerJsFile('@web/js/user/module.js', ['depends' => [frontend\assets\AppAsset::className()]]);
-    $this->registerJsFile('@web/js/user/controller.js', ['depends' => [frontend\assets\AppAsset::className()]]);
-    $this->registerJsFile('@web/js/user/service.js', ['depends' => [frontend\assets\AppAsset::className()]]);
-?>

@@ -2,10 +2,9 @@ app.factory("UserService", ["$http","$q","$window",function ($http, $q, $window)
     var userInfo;
 
     function login(userName, password) {
-        alert('vao service');
         var deferred = $q.defer();
 
-        $http.post("/api/login", { userName: userName, password: password })
+        $http.post("../user/login", { userName: userName, password: password })
             .then(function (result) {
                 userInfo = {
                     accessToken: result.data.access_token,
