@@ -9,7 +9,7 @@ use api\Helpers;
 /**
  * Site controller
  */
-class AgencyController extends Controller
+class UserController extends Controller
 {
     protected $limit = 10;
 
@@ -27,6 +27,11 @@ class AgencyController extends Controller
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
         ];
+    }
+
+
+    public function actionLogin() {
+        echo 'vao day'; die;
     }
 
     /**
